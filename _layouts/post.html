@@ -2,14 +2,64 @@
 layout: default
 ---
 <div id="post">
-{{ content }}
+
+    <header id="post-header">
+
+        <h1 id="post-title">{{ page.title }}</h1>
+
+        <div id="post-authoring-info" class="cf">
+            <img id="post-author-img" src="{{ page.author-img }}"/>
+            <span id="post-author-name">{{ page.author }}</span>
+            <span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+        </div>
+
+        <ul id="post-tags">
+            {% for tag in page.tags %}
+                <li class="post-tag"><a href="{{ tag | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </header>
+
+    <div class="post-divider"></div>
+
+    <article id="post-content">
+
+        <div id="post-assets">
+
+            {% if page.demo %}
+
+            <div class="post-asset-container">
+                <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
+            </div>
+            {% endif %}
+
+            {% if page.source %}
+            <div class="post-asset-container">
+                <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
+            </div>
+            {% endif %}
+
+        </div>
+
+        {{ content }}
+
+    </article>
+
 </div>
 
 <div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+    <h2>Related Posts</h2>
+
+    <ul class="posts">
+
+        {% for post in site.related_posts limit:3 %}
+
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+        {% endfor %}
+
+    </ul>
+
 </div>

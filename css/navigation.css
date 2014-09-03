@@ -86,7 +86,7 @@
 
 .mobile-nav-toggle {
     position: absolute;
-    left: -100px;
+    display: none;
     right: 0;
     height: 40px;
     width: 40px;
@@ -94,6 +94,7 @@
     margin: 20px 30px;
     border: none;
     cursor: pointer;
+    z-index: 1;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -109,12 +110,16 @@
     opacity: 0.7;
 }
 
+#mobile-nav-open {
+    z-index: 2;
+}
+
 #mobile-nav-open:focus {
-    left: -100px;
+    z-index: 1;
 }
 
 #mobile-nav-open:focus ~ #mobile-nav-close {
-    left: auto;
+    z-index: 2;
 }
 
 #mobile-nav-open:focus ~ #mobile-nav {
@@ -152,7 +157,7 @@
         display: none;
     }
 
-    #mobile-nav-open {
-        left: auto;
+    .mobile-nav-toggle {
+        display: inline;
     }
 }
