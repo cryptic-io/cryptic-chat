@@ -1,0 +1,134 @@
+/* Colors */
+
+/*
+    lightblue: #8EC0ED;
+    blue: #5CB1CF;
+    darkblue: #4B88BC;
+
+    lightgreen: #29D180
+    green #28ad60
+    darkgreen #26934C
+
+    lightgray: #B4B6B4
+    gray: #828884
+*/
+
+/* Padding/Margin Factor: 11px */
+
+body {
+    margin: 0;
+    font-family: helvetica,arial,sans-serif;
+    background: #EDEEEE;
+}
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+a {
+    color: #8EC0ED;
+}
+
+a:hover {
+    color: #579FDA;
+}
+
+::selection { background: #579FDA; }
+::-moz-selection { background: #579FDA; }
+
+
+/*  Navigation  */
+
+#nav {
+    position: absolute;
+    height: 58px;
+    line-height: 55px;
+    border-bottom: 1px solid #f1f1f1;
+    background: #f7f7f7;
+    padding: 0 22px;
+    font-size: 14px;
+    opacity: 0.9;
+
+    /*font-family: 'Open Sans';*/
+}
+
+#desktop-nav .nav-item:first-child {
+    margin: 0 0 0 22px;
+}
+
+#logo {
+    left: 22px;
+    color: #000;
+}
+
+#logo:hover {
+    opacity: 0.8;
+    color: #000;
+}
+
+#desktop-nav .nav-item {
+    margin: 0 22px;
+    color: #000;
+}
+
+#desktop-nav .nav-item:hover {
+    opacity: 0.8;
+    color: #000;
+}
+
+#mobile-nav {
+    top: 58px;
+}
+
+#mobile-nav .nav-item {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+    background: #f7f7f7;
+    color: #000;
+    opacity: 0.9;
+}
+
+#mobile-nav .nav-item:hover {
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+    background: #ebebeb;
+    color: #000;
+    opacity: 0.9;
+}
+
+.mobile-nav-toggle {
+    height: 22px;
+    width: 22px;
+    line-height: 0px;
+    margin: 16px 22px;
+}
+
+/*  Banner  */
+
+.banner {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-image: url(/imgs/banner/polygon.jpg);
+}
+
+.dividing-img {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
+
+/*  Posts  */
