@@ -59,7 +59,7 @@ body {
     line-height: 55px;
     padding: 0 22px;
     font-size: 14px;
-    opacity: 0.9;
+    opacity: 0.95;
     margin: 0 auto;
     border-bottom: none;
     background: transparent;
@@ -110,7 +110,6 @@ body {
     border-bottom: 1px solid #f1f1f1;
     background: #f7f7f7;
     color: #000;
-    opacity: 0.9;
 }
 
 #mobile-nav .nav-item:hover {
@@ -248,6 +247,7 @@ body {
 #post-assets {
     text-align: center;
     padding: 33px 0 11px 0;
+    font-size: 16px;
 }
 
 .post-asset-container {
@@ -258,14 +258,15 @@ body {
 
 .post-asset {
     display: inline-block;
+    width: 100%;
+    max-width: 198px;
     height: 44px;
     line-height: 44px;
     border-radius: 3px;
+
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    width: 100%;
-    max-width: 198px;
 }
 
 .post-tag:hover, .post-asset:hover {
@@ -273,11 +274,21 @@ body {
 }
 
 #post-demo {
-    background: #949c97;
+    background: #5ec2d4;
 }
 
 #post-source {
-    background: #747a76;
+    background: #58a0d4;
+}
+
+
+#post-content {
+    font-size: 20px;
+}
+
+#post-content p a {
+    color: #1EA8D4;
+    text-decoration: none;
 }
 
 
