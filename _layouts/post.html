@@ -28,16 +28,15 @@ layout: default
         <div id="post-assets">
 
             {% if page.demo %}
-
-            <div class="post-asset-container">
-                <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
-            </div>
+                <div class="post-asset-container">
+                    <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
+                </div>
             {% endif %}
 
             {% if page.source %}
-            <div class="post-asset-container">
-                <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
-            </div>
+                <div class="post-asset-container">
+                    <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
+                </div>
             {% endif %}
 
         </div>
@@ -46,20 +45,82 @@ layout: default
 
     </article>
 
-</div>
+    <div id="post-share">
+        <p id="post-share-cta">Did you like this article? Share it!</p>
+        <div id="post-share-buttons">
+            <img id="post-share-twitter" class="post-share-button" src="/imgs/social/twitter.svg" />
+            <img id="post-share-facebook" class="post-share-button" src="/imgs/social/facebook.svg" />
+            <img id="post-share-google" class="post-share-button" src="/imgs/social/google.svg" />
+        </div>
+    </div>
 
-<div id="related">
+    <div class="post-divider"></div>
 
-    <h2>Related Posts</h2>
-
-    <ul class="posts">
-
-        {% for post in site.related_posts limit:3 %}
-
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-
-        {% endfor %}
-
-    </ul>
 
 </div>
+
+<footer id="footer">
+    <div id="footer-author" class="cf">
+        <img id="footer-author-img" src="{{ page.author-img }}"/>
+        <div id="footer-author-words">
+            <span id="footer-author-name">{{ page.author }}</span>
+            <p id="footer-author-bio">{{ page.bio }}</p>
+        </div>
+        <div id="footer-author-socials">
+
+            {% if page.website %}
+            <a href="{{ page.website }}" class="footer-author-social">
+                <i class="fa fa-rss"></i>
+                Website
+            </a>
+            {% endif %}
+
+            {% if page.email %}
+            <a href="{{ page.email }}" class="footer-author-social">
+                <i class="fa fa-envelope-o"></i>
+                Email
+            </a>
+            {% endif %}
+
+            {% if page.github %}
+            <a href="http://github.com/{{ page.github }}" class="footer-author-social">
+                <i class="fa fa-github"></i>
+                Github
+            </a>
+            {% endif %}
+
+            {% if page.twitter %}
+            <a href="http://twitter.com/{{ page.twitter }}" class="footer-author-social">
+                <i class="fa fa-twitter"></i>
+                Twitter
+            </a>
+            {% endif %}
+
+            {% if page.google-plus %}
+            <a href="{{ page.google-plus }}" class="footer-author-social">
+                <i class="fa fa-google-plus"></i>
+                Google+
+            </a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="post-divider"></div>
+
+    <div id="footer-related">
+
+        <h2>Enjoyed This? You Might Also Enjoy Reading:</h2>
+
+        <ul class="footer-related-posts">
+
+            {% for post in site.related_posts limit:5 %}
+
+            <li class="footer-related-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+</footer>
+

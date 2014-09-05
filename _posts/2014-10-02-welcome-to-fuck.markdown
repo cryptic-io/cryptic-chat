@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fuckin shit up with PHP, an introduction to the world of dealling with shit"
+title:  "Fucktion to the world of dealling with shit"
 date:   2014-09-02 18:08:36
 tags: fuck shit tard rumble
 author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
@@ -43,10 +43,6 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
  + fart
 
 ###Some other shit
-
-
-<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-
 
 > From what I can tell, only the smarters of hunters will find the land mines of syntax that are deviously planted throughout our prose.
 

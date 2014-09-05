@@ -1,0 +1,139 @@
+Required ideas:
+
+	Navigation (Inspiration: Fenix Web Server)
+		Members
+		Blog
+		About
+
+	Front Page:
+		Pagination
+		Excerpts
+		Header Images
+
+	Post page:
+
+		Header
+			- Author name (Link to their name on members page)
+			- Author pic
+			- Date
+			Num of Comments (Link to leave a comment)
+			- Tags
+			Categories
+			- Source files link
+      - Live demo link
+
+		Body
+			Images (Look into using a figure instead of just an image with markdown)
+			- Codeblocks and Codewords (with line numbers)
+			Blockquotes
+			- Headers and subheaders
+			- Lists
+			Video/Audio/Objects/Iframes/Embeds
+			- Share buttons (Need SVG for social icons, and to combine them)
+
+		Footer
+			- Author Name ('More posts by Author' link)
+			- Author Pic
+			- Author Bio
+			- Author Socials
+			- Related Articles
+			Discus Comments
+			Back-to-top link
+
+	Members (Inspiration http://tech.pro/about-us)
+		Author name
+		Author Bio
+		Author pic
+		Links to the social networks/website
+		Bio
+		Most recent posts
+
+	Blog Page
+		Re-creation of the index.html page
+
+	About Page
+		Description of who we are/why we're doin this. Tunnel snakes! Gaming, longboarding, smash, pax, GS, Plex, San Fran, Gainesville
+
+	Bottom (Inspiration: http://tech.pro/tutorial/1367/part-1-backbonejs-deconstructed?utm_source=javascriptweekly&utm_medium=email)
+    Tag cloud
+    Latest Articles
+    Categories
+    Contact us
+    Copyright
+    Maybe an Ad
+
+
+Extras:
+
+	Search
+	Author locations in Members page
+	404 page
+	Repos and Github info in Members page
+	Ascii art for each page in comments of html code.
+
+
+Add to Readme:
+
+	Link to Markdown cheatsheet and explanation of differences.
+	Link to recommended markdown editor
+	How to syntax highlight; Codeblocks and Codewords (include example of line numbers) (links to gists)
+	How to add images (from the server directly vs external links)
+	How to add links that persist when site url structure changes (permalinks)
+	You can add Emojis!
+	Minimum Header image size (double header style size, and not ugly)
+	Explain how excerpt
+	Explain front matter variables
+		Header Image
+		Header Text
+		Github username
+		Tags
+		Categories
+		Source Files link
+		Live Demo link
+
+	Member Front Matter
+		Author Name
+		Bio (Soft Character limit)
+		Company
+		Website
+		Email
+		Twitter
+		Github
+		Google Plus
+		Top Projects
+
+
+	Naming the file (must include the date plus the name that you want to appear in the url)
+	@mentions
+	JSFiddle (Other fiddles)
+	Version of Jekyll we're running and date.
+
+Questions to ask every one
+	Ads?
+	Explanation of why 'no sidebar'. (Simplicity's sake, its only used for ads and self promotion, not consistent on mobile)
+	Where to host repo?
+	When do we merge in Pull Requests? Who decides if they're okay?
+	What should About page say?
+
+
+Things I found out:
+	In CSS, putting border-box on position relative elements doesn't affect their 'size' when compared to position absolute elements within or below the original to calculate distance. For example, adding border-top (with border-box and position relative) to a nav will affect the element below (with position absolute) and how many pixels of 'top' are needed to move that element down. I believe this is because
+
+	The above principle will also affect the line-height
+
+
+Posts to grab
+	Andrew:
+		Cloudflare post about NSA guy.
+
+	Brian:
+		Brian's posts
+
+Post Ideas
+	Explain the 'Group Blog' setup for Jekyll and Github Pages
+	Explain DaisywheelJS
+
+
+TODO:
+	Combine SVGs into one SVG file
+	Only request the icons needed from font-awesome (uparrow, rss, email, github, twitter)

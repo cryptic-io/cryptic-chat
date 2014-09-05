@@ -94,7 +94,7 @@
     margin: 20px 30px;
     border: none;
     cursor: pointer;
-    z-index: 1;
+    z-index: 0;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -111,15 +111,15 @@
 }
 
 #mobile-nav-open {
-    z-index: 2;
-}
-
-#mobile-nav-open:focus {
     z-index: 1;
 }
 
+#mobile-nav-open:focus {
+    z-index: 0;
+}
+
 #mobile-nav-open:focus ~ #mobile-nav-close {
-    z-index: 2;
+    z-index: 1;
 }
 
 #mobile-nav-open:focus ~ #mobile-nav {
