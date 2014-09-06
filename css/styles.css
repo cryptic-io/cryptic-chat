@@ -16,9 +16,9 @@
 /* Padding/Margin Factor: 11px */
 
 body {
+    position: relative;
     margin: 0;
-    font-family: helvetica,arial,sans-serif;
-    background: #EDEEEE;
+    font-family: 'Open Sans';
 }
 
 * {
@@ -53,6 +53,7 @@ ul {
     height: 58px;
     border-bottom: 1px solid #f1f1f1;
     background: #f7f7f7;
+    opacity: 0.95;
     z-index: 1;
 }
 
@@ -66,7 +67,6 @@ ul {
     line-height: 55px;
     padding: 0 22px;
     font-size: 14px;
-    opacity: 0.95;
     margin: 0 auto;
     border-bottom: none;
     background: transparent;
@@ -138,10 +138,12 @@ ul {
 /*  Main  */
 
 #main {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -58px;
     left: 0;
     right: 0;
+    padding-bottom: 66px;
+    background: #EDEEEE;
 }
 
 /*  Banner  */
@@ -195,7 +197,6 @@ ul {
 
 
 #post-authoring-info {
-    width: 300px;
 }
 
 #post-author-img {
@@ -205,9 +206,12 @@ ul {
     border-radius: 50%;
 }
 
-#post-author-name, #post-date {
-    width: 200px;
+#post-author-words {
     float: left;
+}
+
+#post-author-name, #post-date-and-comments {
+    display: block;
     margin: 0;
     padding: 0 0 0 11px;
 }
@@ -218,12 +222,23 @@ ul {
     font-size: 22px;
 }
 
-#post-date {
+#post-date-and-comments {
     height: 22px;
     line-height: 22px;
 
-    font-style: italic;
     color: #111;
+}
+
+#post-date {
+    font-style: italic;
+    margin-right: 11px;
+}
+
+#disqus-num-comments {
+    margin-left: 11px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
@@ -235,23 +250,28 @@ ul {
 
 .post-tag {
     display: inline-block;
+    margin-bottom: 4px;
     list-style: none;
 }
 
 .post-tag a {
     display: block;
     height: 22px;
-    line-height: 22px;
+    line-height: 20px;
     padding: 0 8px;
 
     border-radius: 2px;
-    border: 1px solid #ddd;
-    background: #eee;
+    border: 1px solid #d1d1d1;
+    background: #E4E4E4;
     font-size: 13px;
     color: #444;
     text-decoration: none;
+    font-weight: bold;
 }
 
+.post-tag:hover {
+    opacity: 0.7;
+}
 
 .post-divider {
     background: #ddd;
@@ -285,7 +305,7 @@ ul {
     text-decoration: none;
 }
 
-.post-tag:hover, .post-asset:hover {
+.post-asset:hover {
     opacity: 0.8;
 }
 
@@ -299,7 +319,7 @@ ul {
 
 
 #post-content {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 #post-content p a {
@@ -425,7 +445,7 @@ ul {
 }
 
 #footer-related {
-    margin-top: 44px;
+    margin: 44px 0 55px 0;
 }
 
 #footer-related h2 {
@@ -441,6 +461,76 @@ ul {
     color: #000;
 }
 
+#disqus_thread {
+    padding-top: 44px;
+}
+
+
+/*  Bottom  */
+
+#bottom-band {
+    position: relative;
+    top: -58px;
+    padding: 44px 0;
+    z-index: 1;
+    background-image: url(/imgs/banner/polygon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bottom {
+    max-width: 960px;
+    width: 100%;
+    padding: 22px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    opacity: 0.9;
+}
+
+.bottom-section {
+    float: left;
+    width: 49%;
+    min-width: 352px;
+}
+
+.bottom-section h2 {
+    margin: 0;
+}
+
+.bottom-section ul {
+    margin: 11px 0 0 0;
+    padding-right: 22px;
+}
+
+.bottom-section li {
+    margin: 11px 0;
+}
+
+#bottom-recent a {
+    color: #000;
+}
+
+
+#copyright-band {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px 0 17px 0;
+    background: #EDEEEE;
+    border-top: 1px solid #15232D;
+    text-align: center;
+    font-size: 18px;
+}
+
+#copyright-band a {
+    color: #000;
+}
 
 /* clearfix rules */
 .cf:before,

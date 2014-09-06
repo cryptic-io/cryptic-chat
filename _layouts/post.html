@@ -9,8 +9,10 @@ layout: default
 
         <div id="post-authoring-info" class="cf">
             <img id="post-author-img" src="{{ page.author-img }}"/>
-            <span id="post-author-name">{{ page.author }}</span>
-            <span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+            <div id="post-author-words">
+                <span id="post-author-name">{{ page.author }}</span>
+                <span id="post-date-and-comments"><span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>•<a id="disqus-num-comments" href="#disqus_thread">0 comments</a></span>
+            </div>
         </div>
 
         <ul id="post-tags">
@@ -111,7 +113,7 @@ layout: default
 
         <h2>Enjoyed This? You Might Also Enjoy Reading:</h2>
 
-        <ul class="footer-related-posts">
+        <ul id="footer-related-posts">
 
             {% for post in site.related_posts limit:5 %}
 
@@ -122,5 +124,11 @@ layout: default
         </ul>
 
     </div>
+
+    <div class="post-divider"></div>
+
+    <div id="disqus_thread"></div>
+
 </footer>
 
+{% include disqus.html %}

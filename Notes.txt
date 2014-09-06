@@ -23,12 +23,12 @@ Required ideas:
       - Live demo link
 
 		Body
-			Images (Look into using a figure instead of just an image with markdown)
+			- Images (Look into using a figure instead of just an image with markdown)
 			- Codeblocks and Codewords (with line numbers)
-			Blockquotes
+			- Blockquotes
 			- Headers and subheaders
 			- Lists
-			Video/Audio/Objects/Iframes/Embeds
+			- Video/Audio/Objects/Iframes/Embeds
 			- Share buttons (Need SVG for social icons, and to combine them)
 
 		Footer
@@ -37,7 +37,7 @@ Required ideas:
 			- Author Bio
 			- Author Socials
 			- Related Articles
-			Discus Comments
+			- Discus Comments
 			Back-to-top link
 
 	Members (Inspiration http://tech.pro/about-us)
@@ -55,11 +55,11 @@ Required ideas:
 		Description of who we are/why we're doin this. Tunnel snakes! Gaming, longboarding, smash, pax, GS, Plex, San Fran, Gainesville
 
 	Bottom (Inspiration: http://tech.pro/tutorial/1367/part-1-backbonejs-deconstructed?utm_source=javascriptweekly&utm_medium=email)
-    Tag cloud
-    Latest Articles
+    - Tag cloud
+    - Latest Articles
     Categories
     Contact us
-    Copyright
+    - Copyright
     Maybe an Ad
 
 
@@ -137,3 +137,5 @@ Post Ideas
 TODO:
 	Combine SVGs into one SVG file
 	Only request the icons needed from font-awesome (uparrow, rss, email, github, twitter)
+	Cleanup CSS to be more legible
+	Media queries

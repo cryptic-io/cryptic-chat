@@ -1,0 +1,37 @@
+<div id="bottom-band">
+    <footer id="bottom" class="cf">
+        <div id="bottom-recent" class="bottom-section">
+
+            <h2>Recent Posts</h2>
+
+            <ul id="bottom-recent-posts">
+
+                {% for post in site.posts limit:5 %}
+
+                <li class="bottom-recent-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+        <div id="bottom-tags" class="bottom-section">
+
+            <h2>Tags</h2>
+
+            <ul id="bottom-tags-list">
+                {% for tag in site.tags %}
+                <li class="post-tag"><a href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </footer>
+</div>
+
+<div id="copyright-band">
+
+    <small id="copyright">Designed by <a href="http://likethemammal.com">Chris Dolphin</a></small>
+
+</div>
