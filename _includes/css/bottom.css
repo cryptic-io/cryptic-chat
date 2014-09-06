@@ -1,0 +1,63 @@
+#bottom-band {
+    position: relative;
+    top: -58px;
+    padding: 44px 0;
+    z-index: 1;
+    background-image: url(/imgs/banner/polygon-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bottom {
+    max-width: 960px;
+    width: 100%;
+    padding: 22px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    opacity: 0.9;
+}
+
+.bottom-section {
+    float: left;
+    width: 49%;
+    min-width: 352px;
+}
+
+.bottom-section h2 {
+    margin: 0;
+}
+
+.bottom-section ul {
+    margin: 11px 0 0 0;
+    padding-right: 22px;
+}
+
+.bottom-section li {
+    margin: 11px 0;
+}
+
+#bottom-recent a {
+    color: #000;
+}
+
+
+#copyright-band {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px 0 17px 0;
+    background: #EDEEEE;
+    border-top: 1px solid #15232D;
+    text-align: center;
+    font-size: 18px;
+}
+
+#copyright-band a {
+    color: #000;
+}

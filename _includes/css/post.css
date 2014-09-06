@@ -1,0 +1,304 @@
+#post {
+    padding: 99px 22px 0 22px;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#post h1,
+#post h2,
+#post h3,
+#post h4,
+#post h5
+#post h6 {
+    margin: 33px 0 -10px 0;
+}
+
+#post h1 {
+    margin-bottom: 15px
+}
+
+
+/*  Authoring Info  */
+
+#post-authoring-info {
+}
+
+#post-author-img {
+    width: 48px;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#post-author-words {
+    float: left;
+}
+
+#post-author-name, #post-date-and-comments {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 11px;
+}
+
+#post-author-name {
+    height: 26px;
+    line-height: 23px;
+    font-size: 22px;
+}
+
+#post-date-and-comments {
+    height: 22px;
+    line-height: 22px;
+
+    color: #111;
+}
+
+#post-date {
+    font-style: italic;
+    margin-right: 11px;
+}
+
+#disqus-num-comments {
+    margin-left: 11px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*  Tags  */
+
+#post-tags {
+    text-align: left;
+    margin: 22px 0 15px 0;
+    padding: 0 0 0 22px;
+}
+
+.post-tag {
+    display: inline-block;
+    margin-bottom: 4px;
+    list-style: none;
+}
+
+.post-tag a {
+    display: block;
+    height: 22px;
+    line-height: 20px;
+    padding: 0 8px;
+
+    border-radius: 2px;
+    border: 1px solid #d1d1d1;
+    background: #E4E4E4;
+    font-size: 13px;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-tag:hover {
+    opacity: 0.7;
+}
+
+
+/*  Assets (Demo/Source)  */
+
+#post-assets {
+    text-align: center;
+    padding: 33px 0 11px 0;
+    font-size: 16px;
+}
+
+.post-asset-container {
+    display: inline-block;
+    width: 49%;
+    padding: 0 11px;
+}
+
+.post-asset {
+    display: inline-block;
+    width: 100%;
+    max-width: 198px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 3px;
+
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.post-asset:hover {
+    opacity: 0.8;
+}
+
+#post-demo {
+    background: #5ec2d4;
+}
+
+#post-source {
+    background: #58a0d4;
+}
+
+
+/*  General  */
+
+#post-content {
+    font-size: 19px;
+}
+
+#post-content p a {
+    color: #1EA8D4;
+    text-decoration: none;
+}
+
+#post-content p a:hover {
+    opacity: 0.8;
+}
+
+#post-content img {
+    max-width: 100%;
+    background-color: #E4E4E4;
+    border: 1px solid #d1d1d1;
+    padding: 6px;
+}
+
+#post-content blockquote {
+    margin: 33px 0 22px 0;
+    padding: 0 0 0 16px;
+    border-left: 4px solid #5ec2d4;
+    color: #333;
+    font-style: italic;
+    font-size: 19px;
+}
+
+#post-content iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 22px 0;
+}
+
+#post-content blockquote p {
+    margin: 0;
+}
+
+.post-divider {
+    background: #ddd;
+    margin: 0;
+    height: 1px;
+}
+
+
+/*  Share  */
+
+#post-share {
+    text-align: center;
+    margin-top: 33px;
+    margin-bottom: 44px;
+}
+
+#post-share-cta {
+    margin-bottom: 11px;
+    font-style: italic;
+    font-size: 19px;
+    color: #555;
+}
+
+.post-share-button {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin: 0 6px;
+}
+
+
+/*  Footer  */
+
+#footer {
+    padding: 44px 22px 0 22px;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#footer-author {
+    margin-bottom: 55px;
+}
+
+#footer-author-img {
+    position: absolute;
+    display: block;
+    width: 126px;
+    float: left;
+    border: 3px solid #f7f7f7;
+    border-radius: 50%;
+}
+
+#footer-author-words {
+    min-width: 300px;
+    font-size: 17px;
+    padding-left: 143px;
+}
+
+#footer-author-name {
+    font-size: 22px;
+}
+
+#footer-author-bio {
+    margin-top: 11px;
+}
+
+#footer-author-socials {
+    min-width: 300px;
+    color: #ffffff;
+    padding-left: 143px;
+}
+
+.footer-author-social {
+    display: inline-block;
+    min-width: 143px;
+    padding: 6px;
+    margin: 0 11px 11px 0;
+
+    border-radius: 2px;
+    background: #999;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer-author-social:hover {
+    opacity: 0.8;
+}
+
+.footer-author-social i {
+    display: inline-block;
+    width: 10px;
+    margin-right: 10px;
+}
+
+#footer-related {
+    margin: 44px 0 55px 0;
+}
+
+#footer-related h2 {
+    margin-bottom: 11px;
+}
+
+.footer-related-post {
+    margin: 11px 0;
+    font-size: 18px;
+}
+
+.footer-related-post a {
+    color: #000;
+}
+
+#disqus_thread {
+    padding-top: 44px;
+}

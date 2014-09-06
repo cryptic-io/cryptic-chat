@@ -1,5 +1,11 @@
 Required ideas:
 
+	Metadata:
+		Site description
+		Title
+		Post description
+		Keywords
+
 	Navigation (Inspiration: Fenix Web Server)
 		Members
 		Blog
@@ -7,8 +13,15 @@ Required ideas:
 
 	Front Page:
 		Pagination
-		Excerpts
-		Header Images
+		- Excerpts
+		- Banner Image
+		Post
+			- Author Pic
+			- Title
+			- Excerpt
+			- Author name
+			- Date
+			- Tags
 
 	Post page:
 
@@ -16,7 +29,7 @@ Required ideas:
 			- Author name (Link to their name on members page)
 			- Author pic
 			- Date
-			Num of Comments (Link to leave a comment)
+			- Num of Comments (Link to leave a comment)
 			- Tags
 			Categories
 			- Source files link
@@ -64,7 +77,6 @@ Required ideas:
 
 
 Extras:
-
 	Search
 	Author locations in Members page
 	404 page
@@ -73,7 +85,6 @@ Extras:
 
 
 Add to Readme:
-
 	Link to Markdown cheatsheet and explanation of differences.
 	Link to recommended markdown editor
 	How to syntax highlight; Codeblocks and Codewords (include example of line numbers) (links to gists)
@@ -81,7 +92,7 @@ Add to Readme:
 	How to add links that persist when site url structure changes (permalinks)
 	You can add Emojis!
 	Minimum Header image size (double header style size, and not ugly)
-	Explain how excerpt
+	Explain how to use excerpts
 	Explain front matter variables
 		Header Image
 		Header Text
@@ -101,7 +112,6 @@ Add to Readme:
 		Github
 		Google Plus
 		Top Projects
-
 
 	Naming the file (must include the date plus the name that you want to appear in the url)
 	@mentions
@@ -139,3 +149,4 @@ TODO:
 	Only request the icons needed from font-awesome (uparrow, rss, email, github, twitter)
 	Cleanup CSS to be more legible
 	Media queries
+	Link authors to author list and tags to tag list

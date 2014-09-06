@@ -11,5 +11,6 @@ twitter_username: jekyllrb
 github_username:  jekyll
 permalink: /blog/:title/
 
+
 # Build settings
 markdown: kramdown
