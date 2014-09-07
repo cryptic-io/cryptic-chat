@@ -5,6 +5,7 @@ Required ideas:
 		Title
 		Post description
 		Keywords
+		Favicon
 
 	Navigation (Inspiration: Fenix Web Server)
 		Members
@@ -14,7 +15,7 @@ Required ideas:
 	Front Page:
 		Pagination
 		- Excerpts
-		- Banner Image
+		Banner Image
 		Post
 			- Author Pic
 			- Title
@@ -61,6 +62,10 @@ Required ideas:
 		Bio
 		Most recent posts
 
+	Tags Page
+		List of tags with posts underneath (link to with element id (i.e. /tags#tag-name))
+		List of authors with posts underneath (link to with element id (i.e. /tags#author-username))
+
 	Blog Page
 		Re-creation of the index.html page
 
@@ -85,6 +90,7 @@ Extras:
 
 
 Add to Readme:
+	Explanation of Github Pages
 	Link to Markdown cheatsheet and explanation of differences.
 	Link to recommended markdown editor
 	How to syntax highlight; Codeblocks and Codewords (include example of line numbers) (links to gists)
@@ -117,6 +123,7 @@ Add to Readme:
 	@mentions
 	JSFiddle (Other fiddles)
 	Version of Jekyll we're running and date.
+	Browser Support
 
 Questions to ask every one
 	Ads?
@@ -141,6 +148,7 @@ Posts to grab
 
 Post Ideas
 	Explain the 'Group Blog' setup for Jekyll and Github Pages
+		- Remember to restart Jekyll when you make changes to _config.yml
 	Explain DaisywheelJS
 
 

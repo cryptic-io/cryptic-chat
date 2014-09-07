@@ -1,0 +1,54 @@
+---
+layout: default
+title: Dev Blog
+---
+
+<div id="banner">
+    <div id="banner-text">
+
+        <h1 id="banner-header">Tags</h1>
+
+    </div>
+</div>
+
+{% capture tags %}
+    {% for tag in site.tags %}
+        {{ tag[0] }}
+    {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+<ul id="tags-list">
+    {% for tag in sortedtags %}
+    <li id="{{ tag }}" class="tag">
+        <h3>{{ tag }}</h3>
+        {% for post in site.tags[tag] %}
+            <div>{{ post.title }}</div>
+        {% endfor %}
+    </li>
+    {% endfor %}
+</ul>
+
+<ul id="author-list">
+
+    {% for member in site.data.members %}
+
+        <li class="tag">
+
+            <h3>{{ member.name }}</h3>
+
+            {% for post in site.posts %}
+
+                {% if member.github == post.github %}
+
+                    <div>{{ post.title }}</div>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </li>
+
+    {% endfor %}
+
+</ul>

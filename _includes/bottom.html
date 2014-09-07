@@ -22,7 +22,7 @@
 
             <ul id="bottom-tags-list">
                 {% for tag in site.tags %}
-                <li class="post-tag"><a href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+                <li class="post-tag"><a href="/tags#{{ tag | first }}">{{ tag | first }}</a></li>
                 {% endfor %}
             </ul>
 
