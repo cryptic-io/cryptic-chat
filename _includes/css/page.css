@@ -1,0 +1,58 @@
+/*  Banner  */
+
+#banner {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 363px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(/imgs/banner/polygon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#banner-text {
+    position: relative;
+    top: 100px;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#banner-header, #banner-subheader {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: helvetica, arial, sans-serif;;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+#banner-header {
+    font-size: 63px;
+    margin-bottom: 14px;
+}
+
+#banner-subheader {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+/*  Page  */
+
+.page {
+    padding: 22px 22px 0 22px;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+}

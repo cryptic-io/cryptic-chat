@@ -1,0 +1,35 @@
+#tags .list-header {
+    margin: 0 auto 22px auto;
+    font-size: 24px;
+}
+
+#tags .list {
+    padding-left: 22px;
+}
+
+#tags .tag-title {
+    margin: 11px 0;
+    font-size: 20px;
+}
+
+#tags .tag {
+    list-style: none;
+    margin-bottom: 33px;
+}
+
+#tags .post {
+    padding-left: 11px;
+    list-style: none;
+}
+
+#tags .post-list {
+    padding-left: 11px;
+}
+
+#tags .post-title {
+
+}
+
+#tags .post-tag {
+
+}

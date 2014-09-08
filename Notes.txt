@@ -15,7 +15,7 @@ Required ideas:
 	Front Page:
 		Pagination
 		- Excerpts
-		Banner Image
+		Banner Gradients
 		Post
 			- Author Pic
 			- Title
@@ -49,6 +49,7 @@ Required ideas:
 			- Author Name ('More posts by Author' link)
 			- Author Pic
 			- Author Bio
+			- Author Company
 			- Author Socials
 			- Related Articles
 			- Discus Comments
@@ -58,6 +59,7 @@ Required ideas:
 		Author name
 		Author Bio
 		Author pic
+		Company
 		Links to the social networks/website
 		Bio
 		Most recent posts
@@ -128,7 +130,7 @@ Add to Readme:
 Questions to ask every one
 	Ads?
 	Explanation of why 'no sidebar'. (Simplicity's sake, its only used for ads and self promotion, not consistent on mobile)
-	Where to host repo?
+	Where to host repo? Who has merge access
 	When do we merge in Pull Requests? Who decides if they're okay?
 	What should About page say?
 
@@ -146,15 +148,27 @@ Posts to grab
 	Brian:
 		Brian's posts
 
+	Marco:
+		Postmortem on Sock Singles
+
 Post Ideas
 	Explain the 'Group Blog' setup for Jekyll and Github Pages
 		- Remember to restart Jekyll when you make changes to _config.yml
+
 	Explain DaisywheelJS
+
+	Explain Marketing technique or DaisywheelJS
+
+	Explain Navigation.css input focus technique
 
 
 TODO:
 	Combine SVGs into one SVG file
 	Only request the icons needed from font-awesome (uparrow, rss, email, github, twitter)
-	Cleanup CSS to be more legible
+	Cleanup CSS to be more legible (Add CSS variable support)
+	Cleanup template to be more legible
 	Media queries
 	Link authors to author list and tags to tag list
+	Make sure that if authors dont include something then the div/styles dont show up.
+	Make navigation repo and remove transition styles.
+	Google Doc of all the text on the site

@@ -1,9 +1,11 @@
 ---
 ---
-{% include css/navigation.css %}
+{% include css/libs/navigation.css %}
 {% include css/navigation-changes.css %}
 {% include css/posts.css %}
 {% include css/post.css %}
+{% include css/page.css %}
+{% include css/tags.css %}
 {% include css/syntax.css %}
 {% include css/bottom.css %}
 {% include css/general.css %}

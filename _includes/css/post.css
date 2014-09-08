@@ -76,31 +76,6 @@
     padding: 0 0 0 22px;
 }
 
-.post-tag {
-    display: inline-block;
-    margin-bottom: 4px;
-    list-style: none;
-}
-
-.post-tag a {
-    display: block;
-    height: 22px;
-    line-height: 20px;
-    padding: 0 8px;
-
-    border-radius: 2px;
-    border: 1px solid #d1d1d1;
-    background: #E4E4E4;
-    font-size: 13px;
-    color: #444;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.post-tag:hover {
-    opacity: 0.7;
-}
-
 
 /*  Assets (Demo/Source)  */
 
