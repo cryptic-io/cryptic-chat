@@ -14,16 +14,20 @@ elementID: tags
 
 <h3 class="list-header">Posts by Tag</h3>
 
-<ul id="post-list" class="list">
+<ul id="post-by-tag" class="list">
     {% for tag in sortedtags %}
     <li id="{{ tag }}" class="tag">
         <h4 class="tag-title">{{ tag }}</h4>
         <ul class="post-list">
             {% for post in site.tags[tag] %}
-                <li class="post">
-                    <span class="post-title">{{ post.title }}</span>
-                    <span class="post-date">{{ post.date }}</span>
-                    <span class="post-author">{{ post.author }}</span>
+                <li class="post cf">
+                    <div class="post-left">
+                        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+                    <div class="post-right">
+                        <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
+                        <span class="post-author">by <a href="{{ post.github | prepend: '/tags#' | prepend: site.baseurl }}">{{ post.author }}</a></span>
+                    </div>
                 </li>
             {% endfor %}
         </ul>
@@ -33,23 +37,29 @@ elementID: tags
 
 <h3 class="list-header">Posts by Author</h3>
 
-<ul id="author-list" class="list">
+<ul id="posts-by-author" class="list">
 
     {% for member in site.data.members %}
 
-        <li class="tag">
+        <li id="{{ member.github }}" class="tag">
 
             <h4 class="tag-title">{{ member.name }}</h4>
             <ul class="post-list">
                 {% for post in site.posts %}
                     {% if member.github == post.github %}
-                    <li class="post">
-                        <span class="post-title">{{ post.title }}</span>
-                        <span class="post-date">{{ post.date }}</span>
+                    <li class="post cf">
+                        <div class="post-left">
+                            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        </div>
+                        <div class="post-right">
+                            <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
 
-                        {% for tag in post.tags %}
-                            <li class="post-tag"><a href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag }}</a></li>
-                        {% endfor %}
+                            <ul class="post-tags-list">
+                            {% for tag in post.tags %}
+                                <li class="post-tag"><a href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}">{{ tag }}</a></li>
+                            {% endfor %}
+                            </ul>
+                        </div>
                     </li>
                     {% endif %}
                 {% endfor %}

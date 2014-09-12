@@ -8,7 +8,7 @@
 }
 
 #tags .tag-title {
-    margin: 11px 0;
+    margin: 11px 0 22px 0;
     font-size: 20px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 #tags .post {
-    padding-left: 11px;
+    padding: 0 0 22px 11px;
     list-style: none;
 }
 
@@ -26,10 +26,49 @@
     padding-left: 11px;
 }
 
-#tags .post-title {
-
+#tags .post-left {
+    display: inline-block;
+    float: left;
+    width: 102px;
 }
 
-#tags .post-tag {
+#tags .post-right {
+    display: inline-block;
+    float: left;
+    width: 85%;
+}
 
+#tags .post-date {
+    font-weight: bold;
+    line-height: 28px;
+}
+
+#tags .post-title {
+    display: block;
+    font-size: 19px;
+    color: #000;
+    text-decoration: none;
+}
+
+#tags .post-title:hover {
+    text-decoration: underline;
+}
+
+#tags .post-author {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+#tags .post-author a {
+    color: #D008AA;
+    text-decoration: none;
+}
+
+#tags .post-author a:hover {
+    text-decoration: underline;
+}
+
+#tags .post-tags-list {
+    margin: 3px 0 0 0;
+    padding: 0;
 }

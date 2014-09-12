@@ -172,3 +172,5 @@ TODO:
 	Make sure that if authors dont include something then the div/styles dont show up.
 	Make navigation repo and remove transition styles.
 	Google Doc of all the text on the site
+	Make sure templates work with title and alt tags.
+	Color links on page to match accent color
