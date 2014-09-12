@@ -3,17 +3,9 @@ layout: post
 title:  "Fuckin shit up with PHP, an introduction to the world of dealling with shit"
 date:   2014-09-02 18:08:36
 tags: fuck shit tard rumble
-author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
-author: "Reptar The Great"
-bio: You’ll find this post in directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most which launches a web server and auto-regenerates your site when a file is updated.
+username: mediocregopher
 demo: "http://thefuckiswrongwithyou.com"
 source: "http://thefuckiswrongwithyou.com/shit.zip"
-
-twitter: likethemammal
-google-plus: http://google.com/plus/fuck
-website: http://likethemammal.com
-email: dolphin@liekthemammal.com
-github: likethemammal
 ---
 
 

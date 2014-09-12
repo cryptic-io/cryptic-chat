@@ -5,6 +5,11 @@ elementID: posts
 
 <ul>
     {% for post in paginator.posts %}
+
+        {% for member in site.data.members %}
+
+        {% if member.github == post.username %}
+
         <li class="posts-post">
 
             <div class="posts-post-words">
@@ -16,7 +21,11 @@ elementID: posts
 
                 <div class="cf">
 
-                    <img class="posts-post-author-img" src="{{ post.author-img }}"/>
+                    {% if page.header-image %}
+                    <img id="post-author-img" src="{{ post.header-image }}"/>
+                    {% else %}
+                    <img id="post-author-img" src="{{ member.author-img }}"/>
+                    {% endif %}
 
                     <div class="posts-post-metadata cf">
 
@@ -43,6 +52,8 @@ elementID: posts
             </div>
 
         </li>
+        {% endif %}
+        {% endfor %}
     {% endfor %}
 </ul>
 

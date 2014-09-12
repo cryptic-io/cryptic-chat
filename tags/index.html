@@ -26,7 +26,7 @@ elementID: tags
                     </div>
                     <div class="post-right">
                         <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
-                        <span class="post-author">by <a href="{{ post.github | prepend: '/tags#' | prepend: site.baseurl }}">{{ post.author }}</a></span>
+                        <span class="post-author">by <a href="{{ post.username | prepend: '/tags#' | prepend: site.baseurl }}">{{ post.author }}</a></span>
                     </div>
                 </li>
             {% endfor %}
@@ -46,7 +46,7 @@ elementID: tags
             <h4 class="tag-title">{{ member.name }}</h4>
             <ul class="post-list">
                 {% for post in site.posts %}
-                    {% if member.github == post.github %}
+                    {% if member.github == post.username %}
                     <li class="post cf">
                         <div class="post-left">
                             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>

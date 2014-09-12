@@ -2,7 +2,9 @@
 layout: post
 title: You're up and running!
 tags: fuck shit mark
-author-img: 'fuck.jpg'
+username: mediocregopher
+demo: "http://thefuckiswrongwithyou.com"
+source: "http://thefuckiswrongwithyou.com/shit.zip"
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
