@@ -1,0 +1,84 @@
+.member {
+    padding: 44px 22px;
+}
+
+.member-author-img {
+    position: absolute;
+    display: block;
+    width: 126px;
+    float: left;
+    border: 3px solid #f7f7f7;
+    border-radius: 50%;
+}
+
+.member-author-words {
+    min-width: 300px;
+    font-size: 17px;
+    padding-left: 143px;
+}
+
+.member-author-name {
+    font-size: 22px;
+}
+
+.member-author-bio {
+    margin-top: 11px;
+}
+
+.member-author-socials {
+    min-width: 300px;
+    color: #ffffff;
+    padding-left: 143px;
+}
+
+.member-author-social {
+    display: inline-block;
+    min-width: 143px;
+    line-height: 26px;
+    padding: 6px;
+    margin: 0 11px 11px 0;
+
+    border-radius: 3px;
+    background: #999;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.member-author-social:hover {
+    opacity: 0.8;
+}
+
+.member-author-social i {
+    display: inline-block;
+    width: 10px;
+    margin-right: 10px;
+}
+
+.member-recent-posts {
+    margin: 33px 0 0 0;
+}
+
+.member-recent-posts-list {
+    padding-left: 33px;
+    margin: 22px 0 22px 0;
+}
+
+.member-recent-post {
+    list-style: none;
+    margin: 11px 0;
+    font-size: 18px;
+}
+
+.member-recent-post a {
+    color: #000;
+}
+
+.member-recent {
+    margin: 44px 0 55px 0;
+}
+
+.member-recent h2 {
+    margin-bottom: 11px;
+}

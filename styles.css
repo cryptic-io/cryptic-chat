@@ -5,6 +5,8 @@ ellipse: "white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
 {% include css/navigation-changes.css %}
 {% include css/posts.css %}
 {% include css/post.css %}
+{% include css/members.css %}
+{% include css/member.css %}
 {% include css/page.css %}
 {% include css/tags.css %}
 {% include css/syntax.css %}

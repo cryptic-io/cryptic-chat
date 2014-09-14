@@ -5,77 +5,16 @@ subheader: The list of authors and their bios
 elementID: authors
 ---
 
-<ul id="posts-by-author" class="list">
+<ul id="members">
 
     {% for member in site.data.members %}
 
-    <li id="{{ member.github }}" class="cf">
-        <img id="footer-author-img" src="{{ member.author-img }}"/>
-        <div id="footer-author-words">
-            <span id="footer-author-name">{{ member.name }}</span>
-            <p id="footer-author-bio">{{ member.bio }}</p>
-        </div>
-        <div id="footer-author-socials">
 
-            {% if member.website %}
-            <a href="{{ member.website }}" class="footer-author-social">
-                <i class="fa fa-rss"></i>
-                Website
-            </a>
-            {% endif %}
+        <li id="{{ member.github }}" class="members-list-item">
 
-            {% if member.email %}
-            <a href="{{ member.email }}" class="footer-author-social">
-                <i class="fa fa-envelope-o"></i>
-                Email
-            </a>
-            {% endif %}
+            {% include member.html member=member %}
 
-            {% if member.github %}
-            <a href="http://github.com/{{ member.github }}" class="footer-author-social">
-                <i class="fa fa-github"></i>
-                Github
-            </a>
-            {% endif %}
-
-            {% if member.twitter %}
-            <a href="http://twitter.com/{{ member.twitter }}" class="footer-author-social">
-                <i class="fa fa-twitter"></i>
-                Twitter
-            </a>
-            {% endif %}
-
-            {% if page.google-plus %}
-            <a href="{{ member.google-plus }}" class="footer-author-social">
-                <i class="fa fa-google-plus"></i>
-                Google+
-            </a>
-            {% endif %}
-        </div>
-
-        <div class="post-divider"></div>
-
-        <div id="footer-related">
-
-            <h2>Posts by this author</h2>
-
-            <ul id="footer-related-posts">
-
-                {% for post in site.posts limit: 10%}
-                {% if member.github == post.username %}
-
-                <li class="footer-related-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
-
-                {% endif %}
-                {% endfor %}
-
-            </ul>
-
-            <a href="{{ member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all by author</a>
-
-        </div>
-
-    </li>
+        </li>
 
     {% endfor %}
 

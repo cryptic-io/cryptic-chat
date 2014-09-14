@@ -33,7 +33,7 @@ p {
 }
 
 ul {
-    padding-left: 33px;
+    padding-left: 0;
 }
 /*a {*/
     /*color: #8EC0ED;*/
@@ -105,7 +105,8 @@ ul {
     padding: 0 7px;
 
     color: #2B2B2B;
-    border-bottom: 3px solid #cccccc;
+    border-radius: 50%;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -114,7 +115,6 @@ ul {
 .pagination li a:hover,
 .pagination li a.selected {
     background: #2B2B2B;
-    border: none;
     color: #ffffff;
 }
 

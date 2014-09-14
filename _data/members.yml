@@ -1,16 +1,16 @@
-- name: Tom Preston-Werner
-  github: mojombo
+- name: Chris Dolphin
+  github: likethemammal
+  author-img: "https://avatars1.githubusercontent.com/u/3430841?v=2"
+  bio: "My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games and write jokes with code."
+  twitter: likethemammal
+  google-plus: https://plus.google.com/u/0/+ChrisDolphin/posts
+  website: http://likethemammal.com
+  email: dolphin@likethemammal.com
 
 - name: Brian Picciano
   github: mediocregopher
   author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
-  author: "Reptar The Great"
-  bio: "You’ll find this post in directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most which launches a web server and auto-regenerates your site when a file is updated."
-  twitter: likethemammal
-  google-plus: http://google.com/plus/fuck
-  website: http://likethemammal.com
-  email: dolphin@liekthemammal.com
-
-
-- name: Liu Fengyun
-  github: liufengyun
+  bio: "Coding like a monkey"
+  google-plus: https://plus.google.com/u/0/+BrianPiccianoWillNeverBeAbleToGiveOutThisURL/posts
+  website: http://blog.mediocregopher.com
+  email: mediocregopher@gmail.com

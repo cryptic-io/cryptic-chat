@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fucktion to the world of dealling with shit"
+title:  Fucktion to the world of dealling with shit
 date:   2014-09-02 18:08:36
 tags: fuck shit tard rumble
 username: mediocregopher

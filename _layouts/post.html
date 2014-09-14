@@ -68,70 +68,11 @@ layout: default
 
     <footer id="footer">
 
-        <div id="footer-author" class="cf">
-            <img id="footer-author-img" src="{{ member.author-img }}"/>
-            <div id="footer-author-words">
-                <span id="footer-author-name">{{ member.author }}</span>
-                <p id="footer-author-bio">{{ member.bio }}</p>
-            </div>
-            <div id="footer-author-socials">
+        <div id="footer-member" class="cf">
 
-                {% if member.website %}
-                <a href="{{ member.website }}" class="footer-author-social">
-                    <i class="fa fa-rss"></i>
-                    Website
-                </a>
-                {% endif %}
-
-                {% if member.email %}
-                <a href="{{member.email }}" class="footer-author-social">
-                    <i class="fa fa-envelope-o"></i>
-                    Email
-                </a>
-                {% endif %}
-
-                {% if member.github %}
-                <a href="http://github.com/{{ member.github }}" class="footer-author-social">
-                    <i class="fa fa-github"></i>
-                    Github
-                </a>
-                {% endif %}
-
-                {% if member.twitter %}
-                <a href="http://twitter.com/{{ member.twitter }}" class="footer-author-social">
-                    <i class="fa fa-twitter"></i>
-                    Twitter
-                </a>
-                {% endif %}
-
-                {% if member.google-plus %}
-                <a href="{{ member.google-plus }}" class="footer-author-social">
-                    <i class="fa fa-google-plus"></i>
-                    Google+
-                </a>
-                {% endif %}
-            </div>
-        </div>
-
-        <div class="post-divider"></div>
-
-        <div id="footer-related">
-
-            <h2>Enjoyed This? You Might Also Enjoy Reading:</h2>
-
-            <ul id="footer-related-posts">
-
-                {% for post in site.related_posts limit:5 %}
-
-                <li class="footer-related-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
-
-                {% endfor %}
-
-            </ul>
+            {% include member.html member=member %}
 
         </div>
-
-        <div class="post-divider"></div>
 
         <div id="disqus_thread"></div>
 

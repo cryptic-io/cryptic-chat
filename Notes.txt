@@ -154,6 +154,7 @@ Posts to grab
 Post Ideas
 	Explain the 'Group Blog' setup for Jekyll and Github Pages
 		- Remember to restart Jekyll when you make changes to _config.yml
+		- Capture variable names can't be dash seperated.
 
 	Explain DaisywheelJS
 
