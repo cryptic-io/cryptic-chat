@@ -155,12 +155,25 @@ Post Ideas
 	Explain the 'Group Blog' setup for Jekyll and Github Pages
 		- Remember to restart Jekyll when you make changes to _config.yml
 		- Capture variable names can't be dash seperated.
+		- CSS templating
 
 	Explain DaisywheelJS
 
 	Explain Marketing technique or DaisywheelJS
 
 	Explain Navigation.css input focus technique
+
+	Tips for doing complex dom stuff
+		- psuedo-elements cant be directly modified in javascript
+			a. Inject a style tag with the specific styles for the :before/:after elements
+
+	Advantages to using CSS and DOM versus canvas rendering (CSS Visualizers)
+		- Crisper rendering
+		- Easier scaling
+		- Easily inspect element's values
+		- Animations/Transitions calculated on the GPU
+		- Web Animation
+		- Support is as varied as you want
 
 
 TODO:

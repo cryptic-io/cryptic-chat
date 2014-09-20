@@ -50,12 +50,26 @@ ul {
 
 #main {
     position: relative;
-    top: -58px;
+    top: -41px;
     left: 0;
     right: 0;
     padding-bottom: 66px;
     background: #EDEEEE;
 }
+
+/*  Dividing Banner  */
+
+.dividing-img:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+    opacity: 0.95;
+}
+
+
 
 /*  Tags  */
 
@@ -105,8 +119,6 @@ ul {
     padding: 0 7px;
 
     color: #2B2B2B;
-    border-radius: 50%;
-    border-bottom: 3px solid rgba(0,0,0,0.2);
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -114,8 +126,7 @@ ul {
 
 .pagination li a:hover,
 .pagination li a.selected {
-    background: #2B2B2B;
-    color: #ffffff;
+    border-bottom: 3px solid #2B2B2B;
 }
 
 

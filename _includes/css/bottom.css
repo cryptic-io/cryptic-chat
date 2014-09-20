@@ -13,6 +13,25 @@
     background-attachment: fixed;
 }
 
+#bottom-band:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+    opacity: 0.9;
+
+    background: #a9c1d0; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #a9c1d0 0%, #0c65c1 50%, #022447 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a9c1d0), color-stop(50%,#0c65c1), color-stop(100%,#022447)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9c1d0', endColorstr='#022447',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 #bottom {
     max-width: 960px;
     width: 100%;
