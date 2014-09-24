@@ -1,79 +1,36 @@
 /*  Banner  */
 
 .banner {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    height: 275px;
     width: 100%;
-    margin-bottom: 30px;
 
-    color: white;
     text-align: center;
     font-weight: bold;
-    background-image: url(/imgs/banner/polygon.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #E4E4E4;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
-
-#posts-banner:before {
-    background: #eb0077; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #eb0077 0%, #324c70 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#eb0077), color-stop(100%,#324c70)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  #eb0077 0%,#324c70 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  #eb0077 0%,#324c70 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  #eb0077 0%,#324c70 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #eb0077 0%,#324c70 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb0077', endColorstr='#324c70',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-#authors-banner:before {
-    background: -webkit-linear-gradient(-45deg, #FC354C 10%, #0ABFBC 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(-45deg, #FC354C 10%, #0ABFBC 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(-45deg, #FC354C 10%, #0ABFBC 90%); /* IE10 */
-    background:      -o-linear-gradient(-45deg, #FC354C 10%, #0ABFBC 90%); /* Opera 11.10+ */
-    background:         linear-gradient(-45deg, #FC354C 10%, #0ABFBC 90%); /* W3C */
-}
-
-#tags-banner:before {
-    background: -webkit-linear-gradient(-45deg, #FF512F 10%, #DD2476 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(-45deg, #FF512F 10%, #DD2476 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(-45deg, #FF512F 10%, #DD2476 90%); /* IE10 */
-    background:      -o-linear-gradient(-45deg, #FF512F 10%, #DD2476 90%); /* Opera 11.10+ */
-    background:         linear-gradient(-45deg, #FF512F 10%, #DD2476 90%); /* W3C */
-}
-
 
 
 #banner-text {
-    position: relative;
-    top: 66px;
     max-width: 960px;
     width: 100%;
-    padding: 0 22px;
+    padding: 11px 22px;
     margin: 0 auto;
     text-align: left;
 }
 
 #banner-header, #banner-subheader {
-    color: #ffffff;
-    font-weight: bold;
+    color: #3A3D3D;
     font-family: helvetica, arial, sans-serif;;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    margin: 0;
 }
 
 #banner-header {
-    font-size: 63px;
-    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 #banner-subheader {
-    margin-top: 0;
-    font-size: 23px;
+    font-size: 12px;
 }
 
 /*  Page  */

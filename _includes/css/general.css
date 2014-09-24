@@ -18,7 +18,7 @@
 body {
     position: relative;
     margin: 0;
-    font-family: 'Open Sans';
+    font-family: 'Helvetica';
     background: #EDEEEE;
 }
 
@@ -49,12 +49,8 @@ ul {
 /*  Main  */
 
 #main {
-    position: relative;
-    top: -41px;
-    left: 0;
-    right: 0;
     padding-bottom: 66px;
-    background: #EDEEEE;
+    background: #E5E5E5;
 }
 
 /*  Dividing Banner  */
@@ -81,17 +77,15 @@ ul {
 
 .post-tag a {
     display: block;
-    height: 22px;
-    line-height: 20px;
-    padding: 0 8px;
+    height: 26px;
+    line-height: 25px;
+    padding: 0 14px;
 
-    border-radius: 2px;
-    border: 1px solid #d1d1d1;
-    background: #E4E4E4;
+    border-radius: 13px;
+    background: #727272;
     font-size: 13px;
-    color: #444;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .post-tag:hover {

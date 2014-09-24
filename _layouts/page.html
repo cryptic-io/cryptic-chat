@@ -2,21 +2,6 @@
 layout: default
 ---
 
-<div id="{{ page.elementID }}-banner" class="banner dividing-img">
-    <div id="banner-text">
-
-        {% if page.header %}
-            <h1 id="banner-header">{{ page.header }}</h1>
-            <h2 id="banner-subheader">{{ page.subheader }}</h2>
-        {% else %}
-            <h1 id="banner-header">Tunnel Snakes</h1>
-            <h2 id="banner-subheader">A tech blog by the one and only... Cus we rule!</h2>
-        {% endif %}
-
-
-    </div>
-</div>
-
 <div id="{{ page.elementID }}" class="page">
 
     {{ content }}
