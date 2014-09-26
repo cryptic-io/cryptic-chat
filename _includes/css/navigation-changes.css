@@ -1,7 +1,8 @@
 
 #nav-band {
-    height: 36px;
+    height: 39px;
     background: #3A3D3D;
+    border-bottom: 3px solid #65B045;
     opacity: 0.95;
     z-index: 1;
 }

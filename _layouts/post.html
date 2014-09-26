@@ -10,7 +10,9 @@ layout: default
 
         <header id="post-header">
 
-            <h1 id="post-title">{{ page.title }}</h1>
+            <h1 id="post-title">
+                {{ page.title }}
+            </h1>
 
             <div id="post-authoring-info" class="cf">
                 <img id="post-author-img" src="{{ member.author-img }}"/>
@@ -30,23 +32,23 @@ layout: default
 
         <div class="post-divider"></div>
 
-        <article id="post-content">
+        <div id="post-assets">
 
-            <div id="post-assets">
-
-                {% if page.demo %}
-                    <div class="post-asset-container">
-                        <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
-                    </div>
-                {% endif %}
-
-                {% if page.source %}
-                    <div class="post-asset-container">
-                        <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
-                    </div>
-                {% endif %}
-
+            {% if page.demo %}
+            <div class="post-asset-container">
+                <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
             </div>
+            {% endif %}
+
+            {% if page.source %}
+            <div class="post-asset-container">
+                <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
+            </div>
+            {% endif %}
+
+        </div>
+
+        <article id="post-content">
 
             {{ content }}
 
