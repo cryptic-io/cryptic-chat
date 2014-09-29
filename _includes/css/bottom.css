@@ -1,50 +1,18 @@
 #bottom-band {
-    position: relative;
-    top: -58px;
-    padding: 44px 0;
-    z-index: 1;
-    background-image: url(/imgs/banner/polygon-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#bottom-band:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: ' ';
-    opacity: 0.9;
-
-    background: #a9c1d0; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #a9c1d0 0%, #0c65c1 50%, #022447 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a9c1d0), color-stop(50%,#0c65c1), color-stop(100%,#022447)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #a9c1d0 0%,#0c65c1 50%,#022447 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9c1d0', endColorstr='#022447',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-#bottom {
-    max-width: 960px;
+    max-width: 770px;
     width: 100%;
     padding: 22px;
-    margin: 0 auto;
-    background: #f7f7f7;
-    opacity: 0.9;
+    margin: 0 auto 22px auto;
+    border: 1px solid #D8D8D8;
+    background: #f5f5f5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .bottom-section {
     float: left;
-    width: 49%;
-    min-width: 352px;
+    width: 48%;
+    min-width: 351px;
+    margin-right: 11px;
 }
 
 .bottom-section h2 {
@@ -53,7 +21,6 @@
 
 .bottom-section ul {
     margin: 11px 0 0 0;
-    padding: 0 22px 0 33px;
 }
 
 .bottom-section li {
@@ -66,17 +33,14 @@
 
 
 #copyright-band {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 22px 0 17px 0;
-    background: #EDEEEE;
-    border-top: 1px solid #15232D;
+    padding: 22px 0;
+    color: #ABABAB;
+    background: #fff;
+    border-top: 1px solid #DADADA;
     text-align: center;
     font-size: 18px;
 }
 
 #copyright-band a {
-    color: #000;
+    color: #ABABAB;
 }

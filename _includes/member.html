@@ -1,6 +1,8 @@
 <div class="member">
 
-    <img class="member-author-img" src="{{ include.member.author-img }}"/>
+    <div class="member-author-avatar">
+        <img class="member-author-img" src="{{ include.member.author-img }}"/>
+    </div>
 
     <div class="member-author-words">
         <span class="member-author-name">{{ include.member.name }}</span>
@@ -11,35 +13,30 @@
 
         {% if include.member.website %}
         <a href="{{ include.member.website }}" class="member-author-social">
-            <i class="fa fa-rss"></i>
             Website
         </a>
         {% endif %}
 
         {% if include.member.email %}
         <a href="{{ include.member.email }}" class="member-author-social">
-            <i class="fa fa-envelope-o"></i>
             Email
         </a>
         {% endif %}
 
         {% if include.member.github %}
         <a href="http://github.com/{{ include.member.github }}" class="member-author-social">
-            <i class="fa fa-github"></i>
             Github
         </a>
         {% endif %}
 
         {% if include.member.twitter %}
         <a href="http://twitter.com/{{ include.member.twitter }}" class="member-author-social">
-            <i class="fa fa-twitter"></i>
             Twitter
         </a>
         {% endif %}
 
         {% if page.google-plus %}
         <a href="{{ include.member.google-plus }}" class="member-author-social">
-            <i class="fa fa-google-plus"></i>
             Google+
         </a>
         {% endif %}
@@ -47,24 +44,27 @@
 
     <div class="member-recent-posts">
 
-        <h2>Posts by this author</h2>
+        <h2 class="related-posts-title">Posts by this author</h2>
 
-        <ul class="member-recent-posts-list">
+        <ul class="related-posts-list">
 
             {% assign sortedposts = site.posts | where: "username", include.member.github %}
 
             {% for post in sortedposts limit:5 %}
 
-            <li class="member-recent-post"><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li class="related-post cf">
+                <i class="fa fa-angle-right"></i>
+                <a href="{{ post.url }}">
+                    <span>{{ post.title }}</span>
+                </a>
+            </li>
 
             {% endfor %}
 
         </ul>
 
-        <a href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by author</a>
+        <a class="member-recent-posts-all" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by author</a>
 
     </div>
 
 </div>
-
-    <div class="post-divider"></div>
