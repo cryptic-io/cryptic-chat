@@ -4,19 +4,27 @@ elementID: posts
 ---
 
 <ul>
+
+
     {% for post in paginator.posts %}
+
+        {% assign index = forloop.index %}
 
         {% for member in site.data.members %}
 
         {% if member.github == post.username %}
 
-        <li class="posts-post">
+        {% capture leftOrRight %}{{ index | modulo:3 }}{% endcapture %}
 
-            <div class="cf">
+        {% if leftOrRight == '0' %}
 
-                <div class="posts-post-author-avatar">
-                    <img class="posts-post-author-img" src="{{ member.author-img }}"/>
-                </div>
+        <li class="posts-post posts-right cf">
+
+        {% else %}
+
+        <li class="posts-post posts-left cf">
+
+        {% endif %}
 
                 <div class="posts-post-words">
 
@@ -24,6 +32,11 @@ elementID: posts
                         <a href="{{ post.url }}">
                             {{ post.title }}
                         </a>
+
+                        {% for tag in post.tags %}
+                            <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">#{{ tag }}</a>
+                        {% endfor %}
+
                     </h4>
 
                     <div class="posts-post-metadata">
@@ -38,12 +51,8 @@ elementID: posts
 
                 </div>
 
-                <ul class="posts-post-tags-list">
-                    {% for tag in post.tags %}
-                    <li class="post-tag"><a href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag }}</a></li>
-                    {% endfor %}
-                </ul>
-
+            <div class="posts-post-author-avatar">
+                <img class="posts-post-author-img" src="{{ member.author-img }}"/>
             </div>
 
         </li>

@@ -1,4 +1,5 @@
 .posts-post {
+    position: relative;
     list-style: none;
     margin-bottom: 11px;
 }
@@ -28,26 +29,57 @@
 .posts-post-author-avatar {
     position: relative;
     width: 50px;
+    height: 50px;
 }
 
 .posts-post-author-avatar:before {
     content: " ";
     position: absolute;
-    top: 0;
-    right: 0;
     width: 0;
     height: 0;
     border: 9px solid white;
+}
+
+.posts-left .posts-post-author-avatar {
+    position: absolute;
+    top: 0;
+}
+
+.posts-left .posts-post-author-avatar:before {
+    top: 0;
+    right: 0;
     border-left-color: transparent;
     border-bottom-color: transparent;
 }
 
+.posts-right .posts-post-author-avatar {
+    float: right;
+    top: -50px;
+    height: 0;
+}
+
+.posts-right .posts-post-author-avatar:before {
+    bottom: -50px;
+    left: 0;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
 .posts-post-words {
     max-width: 360px;
-    margin-left: 50px;
     padding: 11px;
     background: #fff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.posts-left .posts-post-words {
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.posts-right .posts-post-words {
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .posts-post-authoring-info {
@@ -59,10 +91,6 @@
 .posts-post-author-name {
     color: inherit;
     text-decoration: none;
-}
-
-.posts-post-date {
-
 }
 
 .posts-post-tags-list {

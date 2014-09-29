@@ -56,26 +56,13 @@ ul {
 /*  Tags  */
 
 .post-tag {
-    display: inline-block;
-    margin-bottom: 4px;
-    list-style: none;
-}
-
-.post-tag a {
-    display: block;
-    height: 26px;
-    line-height: 25px;
-    padding: 0 14px;
-
-    border-radius: 13px;
-    background: #727272;
-    font-size: 13px;
-    color: #fff;
+    color: inherit;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .post-tag:hover {
-    opacity: 0.7;
+    text-decoration: underline;
 }
 
 
