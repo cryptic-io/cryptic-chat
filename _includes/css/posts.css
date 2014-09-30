@@ -6,7 +6,7 @@
 
 .posts-post-title {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
     font-weight: normal;
     margin: 0;
     margin-bottom: 8px;
@@ -37,7 +37,7 @@
     position: absolute;
     width: 0;
     height: 0;
-    border: 9px solid white;
+    border: 8px solid white;
 }
 
 .posts-left .posts-post-author-avatar {

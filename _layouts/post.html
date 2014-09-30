@@ -8,29 +8,31 @@ layout: default
 
     <div id="post">
 
-        <header id="post-header">
+        <header id="post-header" class="cf">
 
-            <h1 id="post-title">
-                {{ page.title }}
-            </h1>
-
-            <div id="post-authoring-info" class="cf">
-                <img id="post-author-img" src="{{ member.author-img }}"/>
-                <div id="post-author-words">
-                    <span id="post-author-name">{{ member.name }}</span>
-                    <span id="post-date-and-comments"><span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>•<a id="disqus-num-comments" href="#disqus_thread">0 comments</a></span>
-                </div>
+            <div id="post-author-avatar">
+                <a href="#author"><img id="post-author-img" src="{{ member.author-img }}" title="{{ member.name }}"/></a>
             </div>
 
-            <ul id="post-tags">
-                {% for tag in page.tags %}
-                    <li class="post-tag"><a href="{{ tag | prepend: '/tags/' | prepend: site.baseurl }}">{{ tag }}</a></li>
-                {% endfor %}
-            </ul>
+            <div id="post-header-words">
+
+                <h1 id="post-title">
+                    {{ page.title }}
+
+                    {% for tag in page.tags %}
+                        <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">#{{ tag }}</a>
+                    {% endfor %}
+                </h1>
+
+                <div id="post-metadata">
+                    <span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+                    •
+                    <a id="disqus-num-comments" href="#disqus_thread">0 comments</a></span>
+                </div>
+
+            </div>
 
         </header>
-
-        <div class="post-divider"></div>
 
         <div id="post-assets">
 
@@ -67,7 +69,7 @@ layout: default
 
     <footer id="footer">
 
-        <div id="footer-member" class="cf">
+        <div id="author">
 
             {% include member.html member=member %}
 
