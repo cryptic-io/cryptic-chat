@@ -1,36 +1,132 @@
+/*  General  */
+
 #bottom-band {
     max-width: 770px;
     width: 100%;
-    padding: 22px;
+    padding: 11px;
     margin: 0 auto 22px auto;
-    border: 1px solid #D8D8D8;
-    background: #f5f5f5;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .bottom-section {
+    width: 100%;
+    max-width: 351px;
+    margin-bottom: 11px;
     float: left;
-    width: 48%;
-    min-width: 351px;
-    margin-right: 11px;
+}
+
+.bottom-section:first-child {
+    margin-right: 22px;
 }
 
 .bottom-section h2 {
     margin: 0;
+    padding: 0 0 11px 11px;
+    font-size: 16px;
+    border-bottom: 1px solid #C5C5C5;
 }
 
 .bottom-section ul {
-    margin: 11px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .bottom-section li {
     margin: 11px 0;
 }
 
-#bottom-recent a {
-    color: #000;
+
+/*  Tags  */
+
+#bottom-tags-list .post-tag {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    list-style: none;
 }
 
+#bottom-tags-list .post-tag a {
+    color: #000;
+    text-decoration: none;
+}
+
+#bottom-tags-list .post-tag a:hover {
+    text-decoration: underline;
+}
+
+#bottom-tags-list .post-tag a span {
+    padding-left: 2px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+/*  Recent Posts  */
+
+.recent-post {
+    position: relative;
+    list-style: none;
+    margin-bottom: 11px;
+}
+
+.recent-post-author-avatar {
+    position: absolute;
+    top: 0;
+    width: 36px;
+    height: 36px;
+}
+
+.recent-post-author-avatar:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    top: 0;
+    right: 0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.recent-post-author-img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.recent-post-words {
+    padding: 9px 11px;
+    margin-left: 36px;
+    font-size: 14px;
+    background: #ffffff;
+    {{ page.boxShadow }}
+}
+
+.recent-post-title {
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.recent-post-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.recent-post-title a:hover {
+    text-decoration: underline;
+}
+
+.recent-post-authoring-info {
+    color: #C5C5C5;
+}
+
+.recent-post-author-name {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*  Copyright  */
 
 #copyright-band {
     padding: 22px 0;

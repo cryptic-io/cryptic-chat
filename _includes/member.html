@@ -42,17 +42,17 @@
         {% endif %}
     </div>
 
-    <div class="member-recent-posts">
+    <div class="member-related-posts">
 
-        <h2 class="related-posts-title">Posts by this author</h2>
+        <h2 class="member-related-posts-title">Posts by this author</h2>
 
-        <ul class="related-posts-list">
+        <ul class="member-related-posts-list">
 
             {% assign sortedposts = site.posts | where: "username", include.member.github %}
 
             {% for post in sortedposts limit:5 %}
 
-            <li class="related-post cf">
+            <li class="member-related-post cf">
                 <i class="fa fa-angle-right"></i>
                 <a href="{{ post.url }}">
                     <span>{{ post.title }}</span>
@@ -63,7 +63,7 @@
 
         </ul>
 
-        <a class="member-recent-posts-all" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by author</a>
+        <a class="member-related-posts-all-link" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by author</a>
 
     </div>
 

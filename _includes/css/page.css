@@ -36,8 +36,12 @@
 /*  Page  */
 
 .page {
-    padding: 22px 22px 0 22px;
+    padding: 44px 11px 0 11px;
     width: 100%;
     max-width: 770px;
     margin: 0 auto;
+}
+
+.page-list {
+    margin-top: 0;
 }

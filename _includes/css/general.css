@@ -1,6 +1,6 @@
-/* Colors */
-
 /*
+
+Colors:
     lightblue: #8EC0ED;
     blue: #5CB1CF;
     darkblue: #4B88BC;
@@ -11,9 +11,14 @@
 
     lightgray: #B4B6B4
     gray: #828884
+
+Guides:
+    Padding/Margin Factor: 11px
+
 */
 
-/* Padding/Margin Factor: 11px */
+
+/*  General  */
 
 body {
     position: relative;
@@ -35,16 +40,18 @@ p {
 ul {
     padding-left: 0;
 }
-/*a {*/
-    /*color: #8EC0ED;*/
-/*}*/
 
-/*a:hover {*/
-    /*color: #579FDA;*/
-/*}*/
+/* clearfix rules */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
-/*::selection { background: #579FDA; }*/
-/*::-moz-selection { background: #579FDA; }*/
+.cf:after {
+    clear: both;
+}
+
 
 /*  Main  */
 
@@ -63,49 +70,6 @@ ul {
 
 .post-tag:hover {
     text-decoration: underline;
-}
-
-
-/*  Posts List  */
-
-.related-posts-title {
-    font-size: 20px;
-    margin-top: 22px;
-    margin-bottom: 0;
-}
-
-.related-posts-list {
-    margin: 11px 0 22px 0;
-}
-
-.related-post {
-    list-style: none;
-    margin: 0;
-    font-size: 18px;
-    text-align: left;
-    padding: 11px;
-}
-
-.related-post:hover {
-    background: rgba(0,0,0,0.05);
-}
-
-.related-post a {
-    display: block;
-    color: #000;
-    text-decoration: none;
-    padding-right: 20px;
-}
-
-.related-post i {
-    display: block;
-    float: right;
-    padding: 2px 11px 0 11px;
-}
-
-.related-posts-all {
-    text-decoration: none;
-    color: #427FED;
 }
 
 
@@ -153,17 +117,4 @@ ul {
 .pagination .page-number:last-child a {
     border-radius: 0 3px 3px 0;
     border-right: 1px solid #C5C5C5;
-}
-
-
-
-/* clearfix rules */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
 }

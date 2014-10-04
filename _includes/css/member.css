@@ -2,7 +2,7 @@
     padding: 22px;
     border: 1px solid #D8D8D8;
     background: #f5f5f5;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    {{ page.boxShadow }}
 }
 
 .member-author-avatar {
@@ -64,7 +64,7 @@
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    {{ page.boxShadow }}
 }
 
 .member-author-social:hover {
@@ -77,11 +77,54 @@
     margin-right: 10px;
 }
 
-.member-recent-posts {
+
+/*  Related Posts List  */
+
+.member-related-posts {
     margin: 22px 0 0 0;
     border-top: 1px solid #D8D8D8;
 }
 
-.member-recent-posts-all:hover {
+.member-related-posts-title {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.member-related-posts-list {
+    margin: 11px 0 22px 0;
+}
+
+.member-related-post {
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+    padding: 11px;
+}
+
+.member-related-post:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.member-related-post a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.member-related-post i {
+    display: block;
+    float: right;
+    padding: 2px 11px 0 11px;
+}
+
+.member-related-posts-all-link {
+    text-decoration: none;
+    color: #427FED;
+}
+
+.member-related-posts-all-link:hover {
     text-decoration: underline;
 }
