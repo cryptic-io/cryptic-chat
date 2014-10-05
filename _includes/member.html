@@ -1,50 +1,60 @@
 <div class="member">
 
-    <div class="member-author-avatar">
-        <img class="member-author-img" src="{{ include.member.author-img }}"/>
-    </div>
+    <div class="member-header">
 
-    <div class="member-author-words">
-        <span class="member-author-name">{{ include.member.name }}</span>
-        <p class="member-author-bio">{{ include.member.bio }}</p>
-    </div>
+        <div class="member-author-avatar">
+            <img class="member-author-img" src="{{ include.member.author-img }}"/>
+        </div>
 
-    <div class="member-author-socials">
+        <div class="member-author-words">
+            <div class="member-author-name">
+                <span>{{ include.member.name }}</span>
+                <span class="member-author-username">{{ include.member.github }}</span>
+            </div>
+            <p class="member-author-bio">{{ include.member.bio }}</p>
+        </div>
 
-        {% if include.member.website %}
-        <a href="{{ include.member.website }}" class="member-author-social">
-            Website
-        </a>
-        {% endif %}
+        <div class="member-author-socials">
 
-        {% if include.member.email %}
-        <a href="{{ include.member.email }}" class="member-author-social">
-            Email
-        </a>
-        {% endif %}
+            {% if include.member.website %}
+            <a href="{{ include.member.website }}" class="member-author-social">
+                Website
+            </a>
+            {% endif %}
 
-        {% if include.member.github %}
-        <a href="http://github.com/{{ include.member.github }}" class="member-author-social">
-            Github
-        </a>
-        {% endif %}
+            {% if include.member.email %}
+            <a href="{{ include.member.email }}" class="member-author-social">
+                Email
+            </a>
+            {% endif %}
 
-        {% if include.member.twitter %}
-        <a href="http://twitter.com/{{ include.member.twitter }}" class="member-author-social">
-            Twitter
-        </a>
-        {% endif %}
+            {% if include.member.github %}
+            <a href="http://github.com/{{ include.member.github }}" class="member-author-social">
+                Github
+            </a>
+            {% endif %}
 
-        {% if page.google-plus %}
-        <a href="{{ include.member.google-plus }}" class="member-author-social">
-            Google+
-        </a>
-        {% endif %}
+            {% if include.member.twitter %}
+            <a href="http://twitter.com/{{ include.member.twitter }}" class="member-author-social">
+                Twitter
+            </a>
+            {% endif %}
+
+            {% if page.google-plus %}
+            <a href="{{ include.member.google-plus }}" class="member-author-social">
+                Google+
+            </a>
+            {% endif %}
+
+        </div>
+
     </div>
 
     <div class="member-related-posts">
 
-        <h2 class="member-related-posts-title">Posts by this author</h2>
+        <div class="member-related-posts-title">
+            <h2 class="member-related-posts-title-text">Posts by {{ member.github }}</h2>
+        </div>
 
         <ul class="member-related-posts-list">
 
@@ -63,7 +73,7 @@
 
         </ul>
 
-        <a class="member-related-posts-all-link" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by author</a>
+        <a class="member-related-posts-all-link" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by {{ member.github }}</a>
 
     </div>
 

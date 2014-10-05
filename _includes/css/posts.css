@@ -14,6 +14,7 @@
 /*  Message  */
 
 .posts-post-words {
+    position: relative;
     display: inline-block;
     max-width: 360px;
     padding: 11px;
@@ -34,19 +35,25 @@
 }
 
 .posts-post-title {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: normal;
-    margin-top: 0;
     margin-bottom: 8px;
 }
 
-.posts-post-title a {
+.posts-post-title-text {
+    position: relative;
+    display: inline;
+    line-height: 25px;
+    margin: 0;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.posts-post-title-text a {
     color: #000;
     text-decoration: none;
 }
 
-.posts-post-title a:hover, .posts-post-author-name:hover {
+.posts-post-title-text a:hover, .posts-post-author-name:hover {
     text-decoration: underline;
 }
 
@@ -55,9 +62,10 @@
 }
 
 .posts-post-authoring-info {
-    display: block;
+    position: relative;
     margin: 0;
     color: #C5C5C5;
+    z-index: 1;
 }
 
 .posts-post-author-name {
@@ -65,11 +73,20 @@
     text-decoration: none;
 }
 
+.posts-post-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 
 /*  Avatar  */
 
 .posts-post-author-avatar {
     position: absolute;
+    display: block;
     width: 50px;
     height: 50px;
 }
@@ -80,6 +97,7 @@
     width: 0;
     height: 0;
     border: 8px solid white;
+    z-index: 1;
 }
 
 .posts-left .posts-post-author-avatar {
@@ -91,7 +109,6 @@
     bottom: 50px;
     right: 0;
     height: 0;
-    float: right;
 }
 
 .posts-left .posts-post-author-avatar:before {
@@ -108,9 +125,14 @@
     border-top-color: transparent;
 }
 
-.posts-post-author-img {
+.posts-post-author-avatar a {
     position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.posts-post-author-img {
     width: 100%;
-    z-index: -1;
-    float: left;
 }

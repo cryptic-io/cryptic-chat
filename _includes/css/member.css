@@ -1,14 +1,23 @@
 .member {
-    padding: 22px;
+    color: #000;
     border: 1px solid #D8D8D8;
-    background: #f5f5f5;
+    background: #ffffff;
     {{ page.boxShadow }}
+}
+
+
+/*  Header  */
+
+.member-header {
+    padding: 22px 22px 11px 22px;
+    border-bottom: 1px solid #D8D8D8;
 }
 
 .member-author-avatar {
     position: absolute;
     display: block;
     width: 115px;
+    margin-bottom: 11px;
     float: left;
 }
 
@@ -33,11 +42,17 @@
     font-size: 17px;
     padding-left: 131px;
     margin-top: 1px;
-    color: #4E4E4E;
 }
 
 .member-author-name {
     font-size: 22px;
+}
+
+.member-author-username {
+    line-height: 29px;
+    float: right;
+    font-size: 16px;
+    color: #c5c5c5;
 }
 
 .member-author-bio {
@@ -64,11 +79,12 @@
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    {{ page.boxShadow }}
+    {{ page.buttonShadow }}
 }
 
 .member-author-social:hover {
     opacity: 0.8;
+    border-bottom: 3px solid rgba(0,0,0,0.04);
 }
 
 .member-author-social i {
@@ -81,35 +97,39 @@
 /*  Related Posts List  */
 
 .member-related-posts {
-    margin: 22px 0 0 0;
-    border-top: 1px solid #D8D8D8;
+    padding: 22px 0;
+    font-size: 16px;
 }
 
 .member-related-posts-title {
-    font-size: 20px;
-    margin-top: 22px;
-    margin-bottom: 0;
+    padding: 0 11px;
+}
+
+.member-related-posts-title-text {
+    margin: 0;
+    padding: 0 0 11px 0;
+    font-size: inherit;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .member-related-posts-list {
-    margin: 11px 0 22px 0;
+    margin: 11px 0 0 0;
 }
 
 .member-related-post {
     list-style: none;
     margin: 0;
-    font-size: 18px;
     text-align: left;
     padding: 11px;
 }
 
 .member-related-post:hover {
-    background: rgba(0,0,0,0.05);
+    background: #f8f8f8;
 }
 
 .member-related-post a {
     display: block;
-    color: #000;
+    color: inherit;
     text-decoration: none;
     padding-right: 20px;
 }
@@ -117,12 +137,14 @@
 .member-related-post i {
     display: block;
     float: right;
-    padding: 2px 11px 0 11px;
+    padding: 2px 0 0 11px;
 }
 
 .member-related-posts-all-link {
+    margin-left: 11px;
+    font-size: 12px;
     text-decoration: none;
-    color: #427FED;
+    color: #c5c5c5;
 }
 
 .member-related-posts-all-link:hover {
