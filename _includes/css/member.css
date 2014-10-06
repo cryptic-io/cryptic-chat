@@ -129,9 +129,10 @@
 
 .member-related-post a {
     display: block;
+    line-height: 20px;
+    padding-right: 20px;
     color: inherit;
     text-decoration: none;
-    padding-right: 20px;
 }
 
 .member-related-post i {

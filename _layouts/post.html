@@ -22,14 +22,14 @@ layout: default
                     {{ page.title }}
 
                     {% for tag in page.tags %}
-                        <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">#{{ tag }}</a>
+                        <a class="post-tag" href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}">#{{ tag }}</a>
                     {% endfor %}
                 </h1>
 
                 <div id="post-metadata">
                     <span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
                     •
-                    <a id="disqus-num-comments" href="#disqus_thread">0 comments</a></span>
+                    <a id="disqus-num-comments" href="#disqus_thread">0 comments</a>
                 </div>
 
             </div>

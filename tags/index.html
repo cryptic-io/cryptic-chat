@@ -17,7 +17,11 @@ elementID: tags
 <ul id="post-by-tag" class="list">
     {% for tag in sortedtags %}
     <li id="{{ tag }}" class="tag">
-        <h4 class="tag-title">{{ tag }}</h4>
+
+        <a href="#{{ tag }}">
+            <h4 class="tag-title">#{{ tag }}</h4>
+        </a>
+
         <ul class="post-list">
             {% for post in site.tags[tag] %}
 
@@ -26,14 +30,16 @@ elementID: tags
             {% if member.github == post.username %}
 
             <li class="post cf">
-                    <div class="post-left">
-                        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    </div>
-                    <div class="post-right">
-                        <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
-                        <span class="post-author">by <a href="{{ post.username | prepend: '/tags#' | prepend: site.baseurl }}">{{ member.name }}</a></span>
-                    </div>
-                </li>
+                <div class="post-gutter">
+                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+                <div class="post-main">
+                    <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
+                    <span class="post-author">
+                        <a href="{{ post.username | prepend: '/tags#' | prepend: site.baseurl }}">{{ member.name }}</a>
+                    </span>
+                </div>
+            </li>
 
             {% endif %}
 
@@ -53,23 +59,32 @@ elementID: tags
 
         <li id="{{ member.github }}" class="tag">
 
-            <h4 class="tag-title">{{ member.name }}</h4>
+            <a href="#{{ member.github }}">
+                <div class="post-author-avatar cf">
+                    <img class="post-author-avatar-img" src="{{ member.author-img }}">
+                    <h4 class="post-author-name">{{ member.name }}</h4>
+                </div>
+            </a>
+
             <ul class="post-list">
                 {% for post in site.posts %}
                     {% if member.github == post.username %}
                     <li class="post cf">
-                        <div class="post-left">
+
+                        <div class="post-gutter">
                             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
                         </div>
-                        <div class="post-right">
+
+                        <div class="post-main">
                             <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
 
                             <ul class="post-tags-list">
                             {% for tag in post.tags %}
-                                <li class="post-tag"><a href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}">{{ tag }}</a></li>
+                                <li class="post-tag"><a href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}">#{{ tag }}</a></li>
                             {% endfor %}
                             </ul>
                         </div>
+
                     </li>
                     {% endif %}
                 {% endfor %}

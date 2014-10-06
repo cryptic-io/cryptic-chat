@@ -1,41 +1,58 @@
 #tags .list-header {
     margin: 0 auto 22px auto;
-    font-size: 24px;
+    padding: 0 0 11px 11px;
+    border-bottom: 1px solid #C5C5C5;
+    font-size: 16px;
 }
 
 #tags .list {
-    padding-left: 22px;
+    margin-bottom: 44px;
+}
+
+#tags .list:last-child {
+    margin-bottom: 0;
 }
 
 #tags .tag-title {
-    margin: 11px 0 22px 0;
+    margin: 4px 0 16px 0;
     font-size: 20px;
+    text-decoration: underline;
+    color: #000;
 }
 
 #tags .tag {
     list-style: none;
-    margin-bottom: 33px;
+    margin-bottom: 22px;
+    padding: 11px;
+    background: #ffffff;
+    border-radius: 1px;
+    {{ page.boxShadow }}
 }
 
-#tags .post {
-    padding: 0 0 22px 11px;
-    list-style: none;
+#tags .tag:last-child {
+    margin-bottom: 0;
 }
 
 #tags .post-list {
-    padding-left: 11px;
+    padding: 0 11px;
 }
 
-#tags .post-left {
+#tags .post {
+    padding-bottom: 22px;
+    list-style: none;
+}
+
+#tags .post-gutter {
     display: inline-block;
     float: left;
     width: 102px;
 }
 
-#tags .post-right {
+#tags .post-main {
     display: inline-block;
     float: left;
     width: 85%;
+    line-height: 22px;
 }
 
 #tags .post-date {
@@ -44,7 +61,7 @@
 }
 
 #tags .post-title {
-    display: block;
+    margin-right: 4px;
     font-size: 19px;
     color: #000;
     text-decoration: none;
@@ -55,12 +72,14 @@
 }
 
 #tags .post-author {
+    display: block;
+    padding: 4px 0 0 0;
     font-style: italic;
     opacity: 0.9;
 }
 
 #tags .post-author a {
-    color: #D008AA;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -68,7 +87,46 @@
     text-decoration: underline;
 }
 
+
+/*  Posts by Author  */
+
+#tags .post-author-avatar {
+    display: inline-block;
+    margin: 9px 0 14px 0;
+    border-radius: 16px;
+    background: #EDEEEE;
+}
+
+#tags .post-author-avatar-img {
+    display: block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    float: left;
+}
+
+#tags .post-author-name {
+    height: 33px;
+    line-height: 34px;
+    margin: 0 8px;
+    float: left;
+    font-size: 13px;
+    font-weight: normal;
+    color: #000;
+}
+
 #tags .post-tags-list {
+    display: inline;
     margin: 3px 0 0 0;
     padding: 0;
+}
+
+#tags .post-tag {
+    display: inline-block;
+    padding-right: 1px;
+}
+
+#tags .post-tag a {
+    text-decoration: none;
+    color: inherit;
 }
