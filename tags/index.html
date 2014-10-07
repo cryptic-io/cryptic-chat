@@ -1,7 +1,6 @@
 ---
 layout: page
-header: Tags
-subheader: A list of all the posts by tag and by author
+title: Tags
 elementID: tags
 ---
 
@@ -12,7 +11,7 @@ elementID: tags
 {% endcapture %}
 {% assign sortedtags = tags | split:' ' | sort %}
 
-<h3 class="list-header">Posts by Tag</h3>
+<h3 class="page-header">Posts by Tag</h3>
 
 <ul id="post-by-tag" class="list">
     {% for tag in sortedtags %}
@@ -51,7 +50,7 @@ elementID: tags
     {% endfor %}
 </ul>
 
-<h3 class="list-header">Posts by Author</h3>
+<h3 class="page-header">Posts by Author</h3>
 
 <ul id="posts-by-author" class="list">
 

@@ -3,13 +3,13 @@
 #bottom-band {
     max-width: 770px;
     width: 100%;
-    padding: 11px;
+    padding: 0 11px;
     margin: 0 auto 22px auto;
 }
 
 .bottom-section {
     width: 100%;
-    max-width: 351px;
+    max-width: 363px;
     margin-bottom: 11px;
     float: left;
 }
