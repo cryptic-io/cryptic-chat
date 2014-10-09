@@ -99,8 +99,8 @@ Add to Readme:
 	How to add images (from the server directly vs external links)
 	How to add links that persist when site url structure changes (permalinks)
 	You can add Emojis!
-	Minimum Header image size (double header style size, and not ugly)
-	Explain how to use excerpts
+	X Minimum Header image size (double header style size, and not ugly)
+	X Explain how to use excerpts
 	Explain front matter variables
 		Header Image
 		Header Text
@@ -139,6 +139,8 @@ Things I found out:
 	In CSS, putting border-box on position relative elements doesn't affect their 'size' when compared to position absolute elements within or below the original to calculate distance. For example, adding border-top (with border-box and position relative) to a nav will affect the element below (with position absolute) and how many pixels of 'top' are needed to move that element down. I believe this is because
 
 	The above principle will also affect the line-height
+
+	Psuedo elements inherit overflow hidden from parent, even if you try to overwrite it
 
 
 Posts to grab
@@ -188,3 +190,9 @@ TODO:
 	Google Doc of all the text on the site
 	Make sure templates work with title and alt tags.
 	Color links on page to match accent color
+	Add titles and alt text to everything
+	Assets must compensate for no being included
+
+About page:
+
+We are a group of developers involved in the tech industry that have worked, played, laughed, grown, and discovered together. We each push the bounds of the technology we work with in our own way and want there to be a permanent place we can share the things we've learned.
