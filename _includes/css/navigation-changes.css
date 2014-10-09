@@ -66,6 +66,13 @@
     border-bottom: 1px solid #D8D8D8;
     background: #EDEEEE;
     color: #3A3D3D;
+
+    -webkit-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+    -ms-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+
 }
 
 #mobile-nav .nav-item:hover, #mobile-nav .nav-item:active {
