@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Fuckin shit up with PHP, an introduction to the world of dealling with shit"
-date:   2014-09-02 18:08:36
 tags: fuck shit tard rumble
 username: mediocregopher
 demo: "http://thefuckiswrongwithyou.com"
