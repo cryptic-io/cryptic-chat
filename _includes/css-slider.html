@@ -1,0 +1,13 @@
+<div class="slider-container">
+    <div class="slider">
+
+        {% for image in include.images %}
+
+        <div class="slide">
+            <img class="image" src="../{{ image }}"/>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</div>

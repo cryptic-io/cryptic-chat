@@ -142,6 +142,8 @@ Things I found out:
 
 	Psuedo elements inherit overflow hidden from parent, even if you try to overwrite it
 
+	CSS filter blur doesnt work with animation of leftss
+
 
 Posts to grab
 	Andrew:
