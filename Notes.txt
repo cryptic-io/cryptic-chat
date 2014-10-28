@@ -193,16 +193,8 @@ TODO:
 	Make sure templates work with title and alt tags.
 	Color links on page to match accent color
 	Add titles and alt text to everything
-<<<<<<< HEAD
 	Assets must compensate for no being included
 
 About page:
 
 We are a group of developers involved in the tech industry that have worked, played, laughed, grown, and discovered together. We each push the bounds of the technology we work with in our own way and want there to be a permanent place we can share the things we've learned.
-=======
-	Add company info to member card
-
-About page:
-
-We are a group of developers involved in the tech industry that have worked, played, laughed, grown, and discovered together. We each push the bounds of the technology we work with in our own way and want there to be a permanent place we can share the things we've learned.
->>>>>>> About page started>

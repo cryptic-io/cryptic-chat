@@ -1,0 +1,8 @@
+- name: Grooveshark
+  site: "http://grooveshark.com/"
+
+- name: Plex
+  site: "https://plex.tv/"
+
+- name: Cloudflare
+  site: "https://www.cloudflare.com/"

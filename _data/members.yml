@@ -23,3 +23,22 @@
   google-plus: www.youtube.com/watch?v=dQw4w9WgXcQ
   website: www.youtube.com/watch?v=dQw4w9WgXcQ
   email: rick@roll.com
+
+- name: Chris Dolphin
+  github: likethemammal
+  author-img: "https://avatars1.githubusercontent.com/u/3430841?v=2"
+  bio: "My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games and write jokes with code."
+  companies: [Grooveshark, Plex]
+  twitter: likethemammal
+  google-plus: https://plus.google.com/u/0/+ChrisDolphin/posts
+  website: http://likethemammal.com
+  email: dolphin@likethemammal.com
+
+- name: Brian Picciano
+  github: mediocregopher
+  author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
+  bio: "Coding like a monkey"
+  companies: [Grooveshark]
+  google-plus: https://plus.google.com/u/0/+BrianPiccianoWillNeverBeAbleToGiveOutThisURL/posts
+  website: http://blog.mediocregopher.com
+  email: mediocregopher@gmail.com

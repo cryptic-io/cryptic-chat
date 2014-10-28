@@ -12,6 +12,26 @@
                 <span class="member-author-username">{{ include.member.github }}</span>
             </div>
             <p class="member-author-bio">{{ include.member.bio }}</p>
+
+            <div class="member-author-companies">
+
+                <i class="fa fa-building-o"></i>
+
+                {% for companyName in member.companies %}
+
+                {% for company in site.data.companies %}
+
+                {% if companyName == company.name %}
+
+                    <a href="{{ company.site }}" class="company-link">{{ companyName }}</a>
+
+                {% endif %}
+
+                {% endfor %}
+
+                {% endfor %}
+
+            </div>
         </div>
 
         <div class="member-author-socials">
