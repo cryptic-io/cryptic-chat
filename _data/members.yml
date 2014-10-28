@@ -1,35 +1,9 @@
-- name: Jane Doe
-  github: janedoe
-  author-img: "http://placepic.me/profiles/600-600"
-  bio: "Has ne mazim fabulas, tollit nonumes ad vim, est cu amet utamur concludaturque. Ad ius dicta nostro patrioque, impedit copiosae id est, odio oratio perpetua vis ei. Laudem facilisis mei cu. Ei sit luptatum tacimates, vis ne perpetua interpretaris."
-  twitter: rickastley
-  google-plus: www.youtube.com/watch?v=dQw4w9WgXcQ
-  website: www.youtube.com/watch?v=dQw4w9WgXcQ
-  email: rick@roll.com
-
-- name: Joe Smoe
-  github: joesmoe
-  author-img: "http://placepic.me/profiles/600-600"
-  bio: "Elit semper copiosae ne nam, ad quod nonumy duo, ad quo agam eros. At nec prompta maiorum delicatissimi. Ex usu ignota malorum officiis, ut hinc summo percipitur duo. Antiopam deseruisse adversarium eum ei. Summo percipitur cotidieque eu usu, pro audiam neglegentur reprehendunt ei, labore everti moderatius vim cu. Quodsi integre inermis at mei. Cu cum hinc vulputate."
-  twitter: rickastley
-  google-plus: www.youtube.com/watch?v=dQw4w9WgXcQ
-  website: www.youtube.com/watch?v=dQw4w9WgXcQ
-  email: rick@roll.com
-
-- name:  John Smith
-  github: johnsmith
-  author-img: "http://placepic.me/asimo/600-600"
-  bio: "Lorem ipsum dolor sit amet, eam clita maluisset cu. Suas augue dissentiet an pro. Consul aeterno iudicabit an est, tale quaeque mel eu, at reque nihil vis. Alia vide in vim, sea ut mundi elitr interpretaris, vivendum dissentiet in sea."
-  google-plus: www.youtube.com/watch?v=dQw4w9WgXcQ
-  website: www.youtube.com/watch?v=dQw4w9WgXcQ
-  email: rick@roll.com
-
 - name: Chris Dolphin
   github: likethemammal
   author-img: "https://avatars1.githubusercontent.com/u/3430841?v=2"
   bio: "My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games and write jokes with code."
   companies: [Grooveshark, Plex]
-  twitter: likethemammal
+  twitter: https://twitter.com/likethemammal
   google-plus: https://plus.google.com/u/0/+ChrisDolphin/posts
   website: http://likethemammal.com
   email: dolphin@likethemammal.com
@@ -42,3 +16,23 @@
   google-plus: https://plus.google.com/u/0/+BrianPiccianoWillNeverBeAbleToGiveOutThisURL/posts
   website: http://blog.mediocregopher.com
   email: mediocregopher@gmail.com
+
+- name: Marco Polo
+  github: marcopolo
+  author-img: "https://avatars2.githubusercontent.com/u/594035?v=2"
+  bio: "Partially Functional"
+  companies: [Grooveshark, Prismatic]
+  google-plus: https://plus.google.com/u/0/116812095064551132176/posts
+  twitter: https://twitter.com/open_sourcery
+  website: http://marcopolo.io/
+  email: marco@marcopolo.io
+
+- name: Andrew Kennedy
+  github: akenn
+  author-img: "https://avatars0.githubusercontent.com/u/405000?v=2"
+  bio: "My name is Andrew Kennedy. I was born in 1992 and raised in Saudi Arabia. I'm a runner, programmer, musician, and amateur photographer. During the day I'm a Web Developer for CloudFlare. At night I work on open source projects. You can find all my coding endeavors on GitHub."
+  companies: [Grooveshark, Cloudflare]
+  google-plus: https://google.com/+AndrewKennedy_L1
+  twitter: https://twitter.com/L1fescape
+  website: http://akenn.org/
+  email: andrew@akenn.org

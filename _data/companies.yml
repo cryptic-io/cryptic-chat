@@ -6,3 +6,6 @@
 
 - name: Cloudflare
   site: "https://www.cloudflare.com/"
+
+- name: Prismatic
+  site: "http://getprismatic.com/home"
