@@ -11,10 +11,10 @@
 - name: Brian Picciano
   github: mediocregopher
   author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
-  bio: "Coding like a monkey"
+  bio: "Coding, climbing, longboarding, movie watcher, ginger. I love go, clojure, redis, and sometimes erlang."
   companies: [Grooveshark]
   google-plus: https://plus.google.com/u/0/+BrianPiccianoWillNeverBeAbleToGiveOutThisURL/posts
-  website: http://blog.mediocregopher.com
+  website: http://mediocregopher.com
   email: mediocregopher@gmail.com
 
 - name: Marco Polo
