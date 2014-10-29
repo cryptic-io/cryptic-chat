@@ -1,10 +1,98 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!--  Apple  -->
+    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/imgs/favicon/apple-touch-icon-precomposed.png">
+
+    <!--  Microsoft  -->
+    <meta name="msapplication-TileColor" content="#D8F0CC">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/imgs/favicon/tileicon.png">
+
+    <!-- General page specifics -->
+
+    <!-- title variable -->
+    {% if page.title %}
+
+        {% assign title = page.title | append: " | " | append: site.title %}
+
+    {% else %}
+
+        {% assign title = site.title %}
+
+    {% endif %}
+
+    <!-- url variable -->
+    {% if page.url %}
+
+        {% assign url = page.url %}
+
+    {% else %}
+
+        {% assign url = site.url %}
+
+    {% endif %}
+
+    <!-- author variable -->
+    {% if page.author %}
+
+        {% for member in site.data.members %}
+
+            {% if member.github == page.username %}
+
+                {% assign author = member.name %}
+
+            {% endif %}
+
+        {% endfor %}
+
+    {% else %}
+
+        {% assign author = site.author %}
+
+    {% endif %}
+
+    <!-- keywords variable -->
+    {% capture keywords %}
+
+        {% if page.tags %}
+
+            {% for tag in page.tags %}
+
+                {{ tag }},
+
+            {% endfor %}
+
+        {% else %}
+
+            {{ site.keywords }}
+
+        {% endif %}
+
+    {% endcapture %}
+
+    <title>{{ title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ keywords | strip_newlines }}">
+    <meta name="author" content="{{ author }}">
+
+    <!-- Facebook page specifics -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:image" content="">
+
+    <!-- Twitter page specifics -->
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ url }}">
+    <meta name="twitter:site" content="@likethemammal">
+    <meta name="twitter:image" content="">
 
     <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
@@ -13,4 +101,7 @@
     <link rel="stylesheet" href="{{ '/styles.css' | prepend: site.baseurl }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    {% include google-analytics.html %}
+
 </head>
