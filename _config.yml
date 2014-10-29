@@ -1,12 +1,14 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+title: Cryptic Chat
+email: dolphin@likethemammal.com
+description: >
+  We are a group of developers involved in the tech industry that work,
+  laugh, discover, and grow together. We encourage each other to push the
+  boundaries of the technology we work with everyday. To help reach our
+  personal goals we collaborating often and want others to share in this 
+  experience.
+baseurl: "/cryptic-chat" # the subpath of your site, e.g. /blog/
+url: "http://cryptic-io.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 permalink: /blog/:title/
