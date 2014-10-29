@@ -22,6 +22,7 @@ p code {
     background-color: #F5F5F5;
     border: 1px solid #D8D8D8;
     border-radius: 3px;
+    overflow-x: scroll;
 }
 
 .highlight code {

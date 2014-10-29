@@ -7,11 +7,11 @@ description: >
   boundaries of the technology we work with everyday. To help reach our
   personal goals we collaborating often and want others to share in this 
   experience.
-baseurl: "/cryptic-chat" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cryptic-io.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-permalink: /blog/:title/
+permalink: :title/
 paginate: 13
 
 

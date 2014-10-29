@@ -194,6 +194,7 @@ TODO:
 	Color links on page to match accent color
 	Add titles and alt text to everything
 	Assets must compensate for no being included
+	Add favicon
 
 About page:
 
