@@ -15,7 +15,7 @@ and the results. You can find the [leiningen][lein] repo
 [here][repo] and follow along within that, or simply read the code
 below to get an idea.
 
-Also, Marco ported my code into clojurescript, so you can get random
+Also, @Marco ported my code into clojurescript, so you can get random
 terrain in your browser. [Check it out!][marco]
 
 ```clojure
@@ -30,7 +30,7 @@ terrain in your browser. [Check it out!][marco]
 ;
 ; 1. Take each corner point of the square, average the heights, and
 ;    assign that to be the height of the midpoint of the square.
-;    Apply some random error to the midpoint.
+;    Increase/decrease this midpoint by some random amount (an error factor).
 ;
 ; 2. Creating a line from the midpoint to each corner we get four
 ;    half-diamonds.  Average the heights of the points (with some
