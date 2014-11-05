@@ -51,7 +51,6 @@
 
 .member-author-username {
     line-height: 29px;
-    float: right;
     font-size: 16px;
     color: #c5c5c5;
 }
@@ -165,4 +164,21 @@
 
 .member-related-posts-all-link:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px) {
+    .member-author-avatar {
+        position: relative;
+        float: none;
+        margin: 0 auto 11px auto;
+    }
+
+    .member-author-words, .member-author-socials {
+        padding-left: 0;
+        min-width: initial;
+    }
+
+    .member-author-socials {
+        text-align: center;
+    }
 }
