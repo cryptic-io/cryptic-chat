@@ -62,9 +62,15 @@ layout: default
         <div id="post-share">
             <p id="post-share-cta">Did you like this article? Share it!</p>
             <div id="post-share-buttons">
-                <img id="post-share-twitter" class="post-share-button" src="/imgs/social/twitter.svg" />
-                <img id="post-share-facebook" class="post-share-button" src="/imgs/social/facebook.svg" />
-                <img id="post-share-google" class="post-share-button" src="/imgs/social/google.svg" />
+                <a target="_blank" href="https://twitter.com/home?status={{ page.title }} {{ page.url | prepend: site.url }}">
+                    <img id="post-share-twitter" class="post-share-button" src="/imgs/social/twitter.svg" />
+                </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+                    <img id="post-share-facebook" class="post-share-button" src="/imgs/social/facebook.svg" />
+                </a>
+                <a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}">
+                    <img id="post-share-google" class="post-share-button" src="/imgs/social/google.svg" />
+                </a>
             </div>
         </div>
 
