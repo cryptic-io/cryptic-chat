@@ -225,6 +225,10 @@
     color: #555;
 }
 
+#post-share-buttons a {
+    text-decoration: none;
+}
+
 .post-share-button {
     display: inline-block;
     width: 44px;

@@ -502,7 +502,7 @@ terrain in your browser. [Check it out!][marco]
 ```
 
 [marco]: http://marcopolo.io/diamond-square/
-[terrain]: /img/dsqr-terrain.png
+[terrain]: /imgs/article/dsqr-terrain.png
 [diamondsquare]: http://www.gameprogrammer.com/fractal.html
 [lein]: https://github.com/technomancy/leiningen
 [repo]: https://github.com/mediocregopher/diamond-square

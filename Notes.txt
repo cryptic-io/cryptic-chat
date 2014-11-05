@@ -85,9 +85,8 @@ Required ideas:
 
 Extras:
 	Search
-	Author locations in Members page
 	404 page
-	Repos and Github info in Members page
+	Author locations, Repos and Github info in Members page
 	Ascii art for each page in comments of html code.
 
 
@@ -191,10 +190,9 @@ TODO:
 	Make navigation repo and remove transition styles.
 	Google Doc of all the text on the site
 	Make sure templates work with title and alt tags.
-	Color links on page to match accent color
 	Add titles and alt text to everything
 	Assets must compensate for no being included
-	Add favicon
+	Order the Members page to be sorted alphabetically.
 
 About page:
 

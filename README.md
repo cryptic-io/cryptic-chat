@@ -23,6 +23,18 @@ To create a post a Markdown file needs to be created in the `_posts` directory. 
 
 Before posting an article a member's data must be created for that author. Inside the `_data` directory in `members.yml` each member has a block of variables that will be used to associate this authoring information with that member each time they post from then on. The structure of the variables is in [YAML](http://en.wikipedia.org/wiki/YAML) but doesn't require an intricate knowledge of the data structure. Simply copy and paste the example below, replacing the appropriate information.
 
+```yaml
+- name: Chris Dolphin
+  github: likethemammal
+  author-img: "https://avatars1.githubusercontent.com/u/3430841?v=2"
+  bio: "My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games and write jokes with code."
+  companies: [Grooveshark, Plex]
+  twitter: https://twitter.com/likethemammal
+  google-plus: https://plus.google.com/u/0/+ChrisDolphin/posts
+  website: http://likethemammal.com
+  email: dolphin@likethemammal.com
+```
+
 With this data included in the `members.yml` file the only thing that is needed to attach the author's info in each post in the future is to include the member's `username` in the Front Matter of the post.
 
 ## Front Matter
@@ -59,6 +71,10 @@ The way the post file is named will determine how the url looks. It should inclu
 
 
 # Advanced Usage
+
+## Images
+
+To post images in an article just drop the image in the `imgs/article` directory and reference the path to it there.
 
 ## Emojis
 
