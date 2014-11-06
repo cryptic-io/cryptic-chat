@@ -3,7 +3,15 @@
 
   {% include head.html %}
 
+  {% if page.url != "/index.html" %}
+
   <body>
+
+  {% else %}
+
+  <body class="home">
+
+  {% endif %}
 
     {% include nav.html %}
 

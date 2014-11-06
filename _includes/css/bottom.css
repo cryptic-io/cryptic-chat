@@ -36,6 +36,10 @@
 
 /*  Tags  */
 
+.home #bottom-tags {
+    max-width: none;
+}
+
 #bottom-tags-list .post-tag {
     display: inline-block;
     margin-top: 0;
