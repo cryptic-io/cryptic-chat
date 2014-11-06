@@ -1,17 +1,5 @@
 /*
 
-Colors:
-    lightblue: #8EC0ED;
-    blue: #5CB1CF;
-    darkblue: #4B88BC;
-
-    lightgreen: #29D180
-    green #28ad60
-    darkgreen #26934C
-
-    lightgray: #B4B6B4
-    gray: #828884
-
 Guides:
     Padding/Margin Factor: 11px
 
@@ -24,7 +12,7 @@ body {
     position: relative;
     margin: 0;
     font-family: 'Helvetica';
-    background: #EDEEEE;
+    background: {{ page.grayLightHover }};
 }
 
 * {
@@ -95,26 +83,28 @@ ul {
     width: 30px;
     height: 30px;
 
-    color: #2B2B2B;
+    color: {{ page.lightBlack }};
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    border-top: 1px solid #C5C5C5;
-    border-bottom: 1px solid #C5C5C5;
+    border-top: 1px solid {{ page.grayDarkHover }};
+    border-bottom: 1px solid {{ page.grayDarkHover }};
 }
 
 .pagination .page-number a:hover,
 .pagination .page-number a.selected {
-    background: #C5C5C5;
+    background: {{ page.grayDarkHover }};
 }
 
 .pagination .page-number:first-child a {
+    -webkit-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
-    border-left: 1px solid #C5C5C5;
+    border-left: 1px solid {{ page.grayDarkHover }};
 }
 
 .pagination .page-number:last-child a {
+    -webkit-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
-    border-right: 1px solid #C5C5C5;
+    border-right: 1px solid {{ page.grayDarkHover }};
 }

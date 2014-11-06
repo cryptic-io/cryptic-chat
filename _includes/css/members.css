@@ -28,7 +28,13 @@
     bottom: 0;
     background: #ffffff;
     opacity: 0.5;
+
     -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+
+    -webkit-border-radius: inherit;
     border-radius: inherit;
 }
 

@@ -1,0 +1,32 @@
+.highlight {
+    font-size: 16px;
+}
+
+
+/*  Code Words  */
+
+p code {
+    margin: 0;
+    padding: 0 5px;
+    background-color: {{ page.darkWhite }};
+    border: 1px solid {{ page.gray }};
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/*  Code Blocks  */
+
+.highlight {
+    margin: 22px 0;
+    padding: 30px 15px;
+    background-color: {{ page.darkWhite }};
+    border: 1px solid {{ page.gray }};
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+.highlight code {
+    overflow-x: auto;
+}

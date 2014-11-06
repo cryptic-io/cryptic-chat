@@ -64,7 +64,7 @@
 .posts-post-authoring-info {
     position: relative;
     margin: 0;
-    color: #C5C5C5;
+    color: {{ page.darkGray }};
     z-index: 1;
 }
 

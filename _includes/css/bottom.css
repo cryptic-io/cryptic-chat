@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0 0 11px 11px;
     font-size: 16px;
-    border-bottom: 1px solid #C5C5C5;
+    border-bottom: 1px solid {{ page.grayDarkHover }};
 }
 
 .bottom-section ul {
@@ -134,7 +134,7 @@
 
 .recent-post-authoring-info {
     position: relative;
-    color: #C5C5C5;
+    color: {{ page.grayDarkHover }};
     z-index: 1;
 }
 
@@ -155,13 +155,13 @@
 
 #copyright-band {
     padding: 22px 0;
-    color: #ABABAB;
+    color: {{ page.darkGray }};;
     background: #fff;
-    border-top: 1px solid #DADADA;
+    border-top: 1px solid {{ page.gray }};
     text-align: center;
     font-size: 18px;
 }
 
 #copyright-band a {
-    color: #ABABAB;
+    color: {{ page.darkGray }};;
 }
