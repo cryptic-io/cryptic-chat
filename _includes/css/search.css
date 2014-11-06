@@ -1,0 +1,30 @@
+/*  Search  */
+
+#search-input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+#results {
+  min-height: 100px;
+}
+
+#results li {
+  list-style: none;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.empty-results {
+  color: {{ page.grayDarkHover }};
+}
+
+#results a {
+  color: #000;
+  text-decoration: none;
+}
+
+#results a:hover {
+  text-decoration: underline;
+}
