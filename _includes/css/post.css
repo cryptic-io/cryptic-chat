@@ -38,6 +38,7 @@
     border-left-color: transparent;
     border-bottom-color: transparent;
     -webkit-filter: drop-shadow(-2px 2px 1px rgba(0,0,0,0.2));
+    filter: drop-shadow(-2px 2px 1px rgba(0,0,0,0.2));
 }
 
 #post-author-img {
@@ -55,6 +56,7 @@
     width: 120%;
     z-index: -1;
     -webkit-filter: blur(10px);
+    filter: blur(10px);
 }
 
 #post-header-words {
@@ -79,8 +81,7 @@
     margin: 0;
     height: 22px;
     line-height: 22px;
-
-    color: #C5C5C5;
+    color: {{ page.darkGray }};
 }
 
 #post-date {
@@ -139,18 +140,18 @@
 }
 
 #post-demo {
-    color: #3A3D3D;
+    color: {{ page.lightBlack }};
     background: #fff;
-    border: 1px solid #D8D8D8;
+    border: 1px solid {{ page.gray }};
 }
 
 #post-demo:hover {
-    border: 1px solid #C3C3C3;
+    border: 1px solid {{ page.grayDarkHover }};
     border-bottom: 3px solid rgba(0,0,0,0.05);
 }
 
 #post-source {
-    background: #427FED;
+    background: {{ page.blue }};
 }
 
 
@@ -176,18 +177,18 @@
 
 #post-content img {
     max-width: 100%;
-    background-color: #F5F5F5;
-    border: 1px solid #D8D8D8;
+    background-color: {{ page.darkWhite }};
+    border: 1px solid {{ page.gray }};
     padding: 6px;
 }
 
 #post-content blockquote {
     margin: 11px 0 22px 0;
     padding: 11px;
-    color: #333;
+    color: {{ page.lightBlack }};
     font-size: 19px;
-    background-color: #F5F5F5;
-    border: 1px solid #D8D8D8;
+    background-color: {{ page.darkWhite }};
+    border: 1px solid {{ page.gray }};
     {{ page.boxShadow }}
 }
 
@@ -204,7 +205,7 @@
 }
 
 .post-divider {
-    background: #ddd;
+    background: {{ page.gray }};
     margin: 0;
     height: 1px;
 }
@@ -222,7 +223,7 @@
     margin-bottom: 11px;
     font-style: italic;
     font-size: 19px;
-    color: #555;
+    color: {{ page.lightBlack }};
 }
 
 #post-share-buttons a {
@@ -267,6 +268,7 @@
     }
 
     #post-author-img {
+        -webkit-border-radius: 50%;
         border-radius: 50%;
         margin-bottom: -50%;
         z-index: auto;
@@ -283,7 +285,8 @@
     #post-header-words {
         margin-left: 0;
         padding-top: 40px;
-        box-shadow: 0px -5px 10px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
     }
 
     #post-title {

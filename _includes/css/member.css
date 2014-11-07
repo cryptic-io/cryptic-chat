@@ -1,6 +1,6 @@
 .member {
     color: #000;
-    border: 1px solid #D8D8D8;
+    border: 1px solid {{ page.gray }};
     background: #ffffff;
     {{ page.boxShadow }}
 }
@@ -10,7 +10,7 @@
 
 .member-header {
     padding: 22px 22px 11px 22px;
-    border-bottom: 1px solid #D8D8D8;
+    border-bottom: 1px solid {{ page.gray }};
 }
 
 .member-author-avatar {
@@ -28,12 +28,14 @@
     right: 0;
     width: 20px;
     height: 20px;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #37ab1a;
+    background: {{ page.green }};
 }
 
 .member-author-img {
     width: 100%;
+    -wekit-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -52,7 +54,7 @@
 .member-author-username {
     line-height: 29px;
     font-size: 16px;
-    color: #c5c5c5;
+    color: {{ page.grayDarkHover }};
 }
 
 .member-author-bio {
@@ -60,7 +62,7 @@
 }
 
 .member-author-companies {
-    color: #ABABAB;
+    color: {{ page.darkGray }};
 }
 
 .company-link {
@@ -85,10 +87,11 @@
     margin: 0 11px 11px 0;
     height: 32px;
     line-height: 32px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
-    color: #3A3D3D;
+    color: {{ page.lightBlack }};
     background: #fff;
-    border: 1px solid #D8D8D8;
+    border: 1px solid {{ page.gray }};
     text-decoration: none;
     text-align: center;
     font-size: 13px;
@@ -123,7 +126,7 @@
     margin: 0;
     padding: 0 0 11px 0;
     font-size: inherit;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid {{ page.grayLightHover }};
 }
 
 .member-related-posts-list {
@@ -138,7 +141,7 @@
 }
 
 .member-related-post:hover {
-    background: #f8f8f8;
+    background: {{ page.darkWhite }};
 }
 
 .member-related-post a {
@@ -159,7 +162,7 @@
     margin-left: 11px;
     font-size: 12px;
     text-decoration: none;
-    color: #c5c5c5;
+    color: {{ page.grayDarkHover }};
 }
 
 .member-related-posts-all-link:hover {

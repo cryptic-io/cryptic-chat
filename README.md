@@ -117,3 +117,7 @@ bundle exec jekyll serve
 The version numbers for all dependencies and plugins can be found at [here](https://pages.github.com/versions/).
 
 As of now browser support is IE 9+ because of some CSS functionality used.
+
+##License
+
+This is licensed under the [MIT Open-source License](https://github.com/cryptic-io/cryptic-chat/master/LICENSE.txt)..

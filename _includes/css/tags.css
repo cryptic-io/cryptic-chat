@@ -18,6 +18,7 @@
     margin-bottom: 22px;
     padding: 11px;
     background: #ffffff;
+    -webkit-border-radius: 1px;
     border-radius: 1px;
     {{ page.boxShadow }}
 }
@@ -86,8 +87,9 @@
 #tags .post-author-avatar {
     display: inline-block;
     margin: 9px 0 14px 0;
+    -webkit-border-radius: 16px;
     border-radius: 16px;
-    background: #EDEEEE;
+    background: {{ page.grayLightHover }};
 }
 
 #tags .post-author-avatar-img {

@@ -1,38 +1,3 @@
-/*  Banner  */
-
-.banner {
-    width: 100%;
-
-    text-align: center;
-    font-weight: bold;
-    background: #E4E4E4;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-}
-
-
-#banner-text {
-    max-width: 960px;
-    width: 100%;
-    padding: 11px 22px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#banner-header, #banner-subheader {
-    color: #3A3D3D;
-    font-family: helvetica, arial, sans-serif;;
-    margin: 0;
-}
-
-#banner-header {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-#banner-subheader {
-    font-size: 12px;
-}
-
 /*  Page  */
 
 .page {
@@ -49,6 +14,6 @@
 .page-header {
     margin: 0 auto 22px auto;
     padding: 0 0 11px 11px;
-    border-bottom: 1px solid #C5C5C5;
+    border-bottom: 1px solid {{ page.grayDarkHover }};
     font-size: 16px;
 }
