@@ -9,3 +9,6 @@
 
 - name: Prismatic
   site: "http://getprismatic.com/home"
+
+- name: Google
+  site: "https://www.google.com/intl/en/about/"
