@@ -1,4 +1,7 @@
 <footer id="bottom-band" class="cf">
+
+    {% if page.url != "/index.html" %}
+
     <div id="bottom-recent" class="bottom-section">
 
         <h2 class="recent-posts-title">Recent Posts</h2>
@@ -61,6 +64,8 @@
         </ul>
 
     </div>
+
+    {% endif %}
 
     <div id="bottom-tags" class="bottom-section">
 
