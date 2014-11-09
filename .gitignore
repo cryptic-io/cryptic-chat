@@ -1,2 +1,5 @@
 _drafts/
 _site/
+
+# vim swap files
+.*.sw[op]
