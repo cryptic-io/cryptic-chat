@@ -11,7 +11,7 @@ Guides:
 body {
     position: relative;
     margin: 0;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', 'Open Sans', 'Arial';
     background: {{ page.grayLightHover }};
 }
 
