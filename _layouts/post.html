@@ -63,13 +63,19 @@ layout: default
             <p id="post-share-cta">Did you like this article? Share it!</p>
             <div id="post-share-buttons">
                 <a target="_blank" href="https://twitter.com/home?status={{ page.title }} {{ page.url | prepend: site.url }}">
-                    <img id="post-share-twitter" class="post-share-button" src="/imgs/social/twitter.svg" />
+                    <svg id="post-share-twitter" class="post-share-button">
+                        <use xlink:href="/imgs/svg.svg#svg-twitter" x="0" y="0" width="100%" height="100%"></use>
+                    </svg>
                 </a>
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
-                    <img id="post-share-facebook" class="post-share-button" src="/imgs/social/facebook.svg" />
+                    <svg id="post-share-facebook" class="post-share-button">
+                        <use xlink:href="/imgs/svg.svg#svg-facebook" x="0" y="0" width="100%" height="100%"></use>
+                    </svg>
                 </a>
                 <a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}">
-                    <img id="post-share-google" class="post-share-button" src="/imgs/social/google.svg" />
+                    <svg id="post-share-google" class="post-share-button">
+                        <use xlink:href="/imgs/svg.svg#svg-google" x="0" y="0" width="100%" height="100%"></use>
+                    </svg>
                 </a>
             </div>
         </div>
