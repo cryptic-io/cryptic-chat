@@ -180,7 +180,6 @@ Post Ideas
 
 
 TODO:
-	Combine SVGs into one SVG file
 	Only request the icons needed from font-awesome (uparrow, rss, email, github, twitter)
 	Cleanup CSS to be more legible (Add CSS variable support)
 	Cleanup template to be more legible
