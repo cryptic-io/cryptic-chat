@@ -27,6 +27,10 @@ p code {
     overflow-x: auto;
 }
 
+.highlight pre {
+    margin: 0;
+}
+
 .highlight code {
     overflow-x: auto;
 }

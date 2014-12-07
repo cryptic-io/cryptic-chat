@@ -70,6 +70,7 @@
     margin: 0 0 11px 0;
     font-size: 26px;
     font-weight: normal;
+    line-height: 32px;
 }
 
 #post-title p {
@@ -159,7 +160,7 @@
 
 #post-content {
     font-size: 19px;
-    padding: 11px 22px;
+    padding: 11px 15px;
     background: #fff;
     {{ page.boxShadow }}
 }
@@ -249,7 +250,10 @@
 }
 
 #disqus_thread {
-    padding-top: 44px;
+    margin-top: 44px;
+    padding: 11px 22px;
+    background: #fff;
+    {{ page.boxShadow }}
 }
 
 @media only screen and (max-width: 500px) {

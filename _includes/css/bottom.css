@@ -145,6 +145,10 @@
     text-decoration: underline;
 }
 
+.recent-post-title-text-link {
+    padding-right: 5px;
+}
+
 .recent-post-authoring-info {
     position: relative;
     color: {{ page.grayDarkHover }};

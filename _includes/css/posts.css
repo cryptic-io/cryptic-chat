@@ -16,7 +16,7 @@
 .posts-post-words {
     position: relative;
     display: inline-block;
-    max-width: 360px;
+    max-width: 420px;
     padding: 11px;
 
     text-align: left;
@@ -69,6 +69,10 @@
 
 .posts-post-title-text a:hover, .posts-post-author-name:hover {
     text-decoration: underline;
+}
+
+.posts-post-title-text-link {
+    padding-right: 5px;
 }
 
 .posts-post-tags-list {
