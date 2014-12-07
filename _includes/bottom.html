@@ -21,12 +21,12 @@
                     <div class="recent-post-title">
 
                         <h4 class="recent-post-title-text">
-                            <a class="recent-post-title-text-link" href="{{ post.url }}">
+                            <a class="recent-post-title-text-link" href="{{ post.url }}" title="{{ post.title }}">
                                 {{ post.title }}
                             </a>
 
                             {% for tag in post.tags %}
-                            <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">#{{ tag }}</a>
+                            <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}" title="{{ tag }}">#{{ tag }}</a>
                             {% endfor %}
 
                         </h4>
@@ -36,20 +36,20 @@
                     <div class="recent-post-metadata">
 
                         <span class="recent-post-authoring-info">
-                            <a href="/tags#{{ member.github }}" class="recent-post-author-name">{{ member.name }}</a>
+                            <a href="/tags#{{ member.github }}" class="recent-post-author-name" title="{{ member.name }}">{{ member.name }}</a>
                             •
                             <span class="recent-post-date">{{ post.date | date_to_string }}</span>
                         </span>
 
                     </div>
 
-                    <a class="recent-post-link" href="{{ post.url }}"></a>
+                    <a class="recent-post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
 
                 </div>
 
                 <div class="recent-post-author-avatar">
-                    <a href="/members#{{ member.github }}">
-                        <img class="recent-post-author-img" src="{{ member.author-img }}"/>
+                    <a href="/members#{{ member.github }}" title="{{ member.github }}">
+                        <img class="recent-post-author-img" src="{{ member.author-img }}" alt="{{ member.github }} Avatar Image" title="{{ member.github }}"/>
                     </a>
                 </div>
 
@@ -73,7 +73,7 @@
 
         <ul id="bottom-tags-list">
             {% for tag in site.tags %}
-            <li class="post-tag"><a href="/tags#{{ tag | first }}">#{{ tag | first }}<span>({{ tag | last | size }})</span></a></li>
+            <li class="post-tag"><a href="/tags#{{ tag | first }}" title="{{ tag | first }}">#{{ tag | first }}<span>({{ tag | last | size }})</span></a></li>
             {% endfor %}
         </ul>
 
@@ -82,6 +82,6 @@
 
 <div id="copyright-band">
 
-    <small id="copyright">Designed by <a href="http://likethemammal.com">Chris Dolphin</a> and hosted on <a href="http://github.com/cryptic-io/cryptic-chat/">Github</a></small>
+    <small id="copyright">Designed by <a href="http://likethemammal.com" title="Chris Dolphin's Personal Site">Chris Dolphin</a> and hosted on <a href="http://github.com/cryptic-io/cryptic-chat/" title="Cryptic IO Github Repo">Github</a></small>
 
 </div>

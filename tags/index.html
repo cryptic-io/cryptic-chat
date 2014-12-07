@@ -17,7 +17,7 @@ elementID: tags
     {% for tag in sortedtags %}
     <li id="{{ tag }}" class="tag">
 
-        <a href="#{{ tag }}">
+        <a href="#{{ tag }}" title="{{ tag }}">
             <h4 class="tag-title">#{{ tag }}</h4>
         </a>
 
@@ -58,9 +58,9 @@ elementID: tags
 
         <li id="{{ member.github }}" class="tag">
 
-            <a href="#{{ member.github }}">
+            <a href="#{{ member.github }}" title="{{ member.github }}">
                 <div class="post-author-avatar cf">
-                    <img class="post-author-avatar-img" src="{{ member.author-img }}">
+                    <img class="post-author-avatar-img" src="{{ member.author-img }}" alt="{{ member.github }} Avatar Image" title="{{ member.github }}">
                     <h4 class="post-author-name">{{ member.name }}</h4>
                 </div>
             </a>
