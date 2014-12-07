@@ -16,18 +16,12 @@
 
             <li class="recent-post cf">
 
-                <div class="recent-post-author-avatar">
-                    <a href="/members#{{ member.github }}">
-                        <img class="recent-post-author-img" src="{{ member.author-img }}"/>
-                    </a>
-                </div>
-
                 <div class="recent-post-words">
 
                     <div class="recent-post-title">
 
                         <h4 class="recent-post-title-text">
-                            <a href="{{ post.url }}">
+                            <a class="recent-post-title-text-link" href="{{ post.url }}">
                                 {{ post.title }}
                             </a>
 
@@ -51,6 +45,12 @@
 
                     <a class="recent-post-link" href="{{ post.url }}"></a>
 
+                </div>
+
+                <div class="recent-post-author-avatar">
+                    <a href="/members#{{ member.github }}">
+                        <img class="recent-post-author-img" src="{{ member.author-img }}"/>
+                    </a>
                 </div>
 
             </li>

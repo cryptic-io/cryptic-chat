@@ -24,6 +24,10 @@
     {{ page.boxShadow }}
 }
 
+.posts-post-words:hover {
+    background: {{ page.paleGreen }};
+}
+
 .posts-left .posts-post-words {
     margin-left: 50px;
     margin-right: auto;
@@ -32,6 +36,16 @@
 .posts-right .posts-post-words {
     margin-left: auto;
     margin-right: 50px;
+}
+
+.posts-left .posts-post-words:hover + .posts-post-author-avatar:before {
+    border-right-color:  {{ page.paleGreen }};
+    border-top-color: {{ page.paleGreen }};
+}
+
+.posts-right .posts-post-words:hover + .posts-post-author-avatar:before {
+    border-left-color:  {{ page.paleGreen }};
+    border-bottom-color: {{ page.paleGreen }};
 }
 
 .posts-post-title {

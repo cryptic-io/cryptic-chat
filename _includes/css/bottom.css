@@ -114,6 +114,15 @@
     {{ page.boxShadow }}
 }
 
+.recent-post-words:hover {
+    background: {{ page.paleGreen }};
+}
+
+.recent-post-words:hover + .recent-post-author-avatar:before {
+    border-right-color: {{ page.paleGreen }};
+    border-top-color: {{ page.paleGreen }};
+}
+
 .recent-post-title {
     margin-bottom: 8px;
 }
