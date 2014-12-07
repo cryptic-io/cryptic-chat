@@ -1,7 +1,7 @@
 ;(function(){
   var postsJSON = window.postsJSON;
 
-  // create anelement to show when there are no results
+  // create an element to show when there are no results
   var emptyElem = document.createElement('div');
   emptyElem.className = 'empty-results';
   emptyElem.innerHTML = 'No results to display';
