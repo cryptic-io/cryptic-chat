@@ -1,22 +1,40 @@
 /*  Search  */
 
+#search-input-container {
+  position: relative;
+}
+
+#search-input-container i {
+  position: absolute;
+  padding: 20px 0 0 11px;
+  color: {{ page.grayDarkHover }};
+}
+
 #search-input {
+  height: 55px;
   width: 100%;
+  padding-left: 33px;
   font-size: 20px;
-  padding: 10px 20px;
 }
 
 #results {
-  min-height: 100px;
+  min-height: 99px;
+  margin-top: 11px;
 }
 
-#results li {
-  list-style: none;
+#results a {
+  display: block;
+  padding: 11px;
   font-size: 20px;
-  margin: 10px 0;
+}
+
+#results a:hover {
+  background: {{ page.gray }};
 }
 
 .empty-results {
+  padding: 11px 0;
+  font-size: 20px;
   color: {{ page.grayDarkHover }};
 }
 

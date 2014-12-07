@@ -6,12 +6,16 @@ elementID: search
 
 <h2 class="page-header">Search</h2>
 
-<input id="search-input" placeholder="Search for posts or tags" />
+<div id="search-input-container">
+  <i class="fa fa-search"></i>
+  <input id="search-input" placeholder="Search for posts or tags" />
+</div>
 
-<ul id="results">
-  <li class="no-results">No results to display</li>
-</ul>
+<div id="results">
+  <div class="empty-results">No results to display</div>
+</div>
 
 <script>
+  {% include js/search-data.js %}
   {% include js/search.js %}
 </script>
