@@ -249,8 +249,11 @@
     text-align: left;
 }
 
+#author {
+    margin-bottom: 44px;
+}
+
 #disqus_thread {
-    margin-top: 44px;
     padding: 11px 22px;
     background: #fff;
     {{ page.boxShadow }}

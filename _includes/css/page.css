@@ -11,9 +11,16 @@
     margin: 0;
 }
 
-.page-header {
+.page-header, .page-sub-header {
     margin: 0 auto 22px auto;
     padding: 0 0 11px 11px;
     border-bottom: 1px solid {{ page.grayDarkHover }};
+}
+
+.page-header {
+    font-size: 20px;
+}
+
+.page-sub-header {
     font-size: 16px;
 }

@@ -6,9 +6,11 @@ elementID: members
 
 <h2 class="page-header">Members</h2>
 
+{% assign sorted_members = (site.data.members | sort: 'name') %}
+
 <ul id="avatars-list" class="page-list">
 
-    {% for member in site.data.members %}
+    {% for member in sorted_members %}
 
     <li class="avatars-list-item">
 
@@ -23,7 +25,7 @@ elementID: members
 
 <ul id="members-list" class="page-list">
 
-    {% for member in site.data.members %}
+    {% for member in sorted_members %}
 
         <li id="{{ member.github }}" class="members-list-item">
 

@@ -20,9 +20,6 @@
 
 .bottom-section h2 {
     margin: 0;
-    padding: 0 0 11px 11px;
-    font-size: 16px;
-    border-bottom: 1px solid {{ page.grayDarkHover }};
 }
 
 .bottom-section ul {
@@ -181,4 +178,15 @@
 
 #copyright-band a {
     color: {{ page.darkGray }};;
+}
+
+@media only screen and (max-width: 785px) {
+    .bottom-section {
+        max-width: none;
+    }
+
+    .recent-post-words {
+        display: inline-block;
+        max-width: 420px;
+    }
 }
