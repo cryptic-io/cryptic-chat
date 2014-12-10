@@ -1,6 +1,6 @@
 - name: Chris Dolphin
   github: likethemammal
-  author-img: "https://avatars1.githubusercontent.com/u/3430841?v=2"
+  author-img: "https://avatars1.githubusercontent.com/u/3430841"
   bio: "My name is Chris. I'm a developer, longboarder, chillwave-lover, and doer of things. I build games and write jokes with code."
   companies: [Grooveshark, Plex]
   twitter: https://twitter.com/likethemammal
@@ -10,7 +10,7 @@
 
 - name: Brian Picciano
   github: mediocregopher
-  author-img: "https://avatars.githubusercontent.com/u/933154?v=2"
+  author-img: "https://avatars.githubusercontent.com/u/933154"
   bio: "Coding, climbing, longboarding, movie watcher, ginger. I love go, clojure, redis, and sometimes erlang."
   companies: [Grooveshark]
   google-plus: https://plus.google.com/u/0/+BrianPiccianoWillNeverBeAbleToGiveOutThisURL/posts
@@ -19,7 +19,7 @@
 
 - name: Marco Polo
   github: marcopolo
-  author-img: "https://avatars2.githubusercontent.com/u/594035?v=2"
+  author-img: "https://avatars2.githubusercontent.com/u/594035"
   bio: "Partially Functional"
   companies: [Grooveshark, Prismatic]
   google-plus: https://plus.google.com/u/0/116812095064551132176/posts
@@ -29,7 +29,7 @@
 
 - name: Andrew Kennedy
   github: akenn
-  author-img: "https://avatars0.githubusercontent.com/u/405000?v=2"
+  author-img: "https://avatars0.githubusercontent.com/u/405000"
   bio: "My name is Andrew Kennedy. I was born in 1992 and raised in Saudi Arabia. I'm a runner, programmer, musician, and amateur photographer. During the day I'm a Web Developer for CloudFlare. At night I work on open source projects. You can find all my coding endeavors on GitHub."
   companies: [Grooveshark, Cloudflare]
   google-plus: https://google.com/+AndrewKennedy_L1

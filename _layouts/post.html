@@ -10,10 +10,10 @@ layout: default
 
         <header id="post-header" class="cf">
 
-            <a href="#author">
+            <a href="#author" title="Author">
                 <div id="post-author-avatar">
-                    <img id="post-author-img-bg" src="{{ member.author-img }}" title="{{ member.name }} background"/>
-                    <img id="post-author-img" src="{{ member.author-img }}" title="{{ member.name }}"/>
+                    <img id="post-author-img-bg" src="{{ member.author-img }}" alt="{{ member.name }} background" title="{{ member.name }} background"/>
+                    <img id="post-author-img" src="{{ member.author-img }}" alt="{{ member.name }} Avatar Image" title="{{ member.name }}"/>
                 </div>
             </a>
 
@@ -23,14 +23,14 @@ layout: default
                     {{ page.title }}
 
                     {% for tag in page.tags %}
-                        <a class="post-tag" href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}">#{{ tag }}</a>
+                        <a class="post-tag" href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}" title="{{ tag }}">#{{ tag }}</a>
                     {% endfor %}
                 </h1>
 
                 <div id="post-metadata">
                     <span id="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
                     •
-                    <a id="disqus-num-comments" href="#disqus_thread">0 comments</a>
+                    <a id="disqus-num-comments" href="#disqus_thread" title="To the comments">0 comments</a>
                 </div>
 
             </div>
@@ -41,13 +41,13 @@ layout: default
 
             {% if page.demo %}
             <div class="post-asset-container">
-                <a id="post-demo" class="post-asset" href="{{ page.demo }}">Demo</a>
+                <a id="post-demo" class="post-asset" href="{{ page.demo }}" title="Demo">Demo</a>
             </div>
             {% endif %}
 
             {% if page.source %}
             <div class="post-asset-container">
-                <a id="post-source" class="post-asset" href="{{ page.source }}">Source</a>
+                <a id="post-source" class="post-asset" href="{{ page.source }}" title="Source">Source</a>
             </div>
             {% endif %}
 
@@ -62,17 +62,17 @@ layout: default
         <div id="post-share">
             <p id="post-share-cta">Did you like this article? Share it!</p>
             <div id="post-share-buttons">
-                <a target="_blank" href="https://twitter.com/home?status={{ page.title }} {{ page.url | prepend: site.url }}">
+                <a target="_blank" href="https://twitter.com/home?status={{ page.title }} {{ page.url | prepend: site.url }}" title="Share on Twitter">
                     <svg id="post-share-twitter" class="post-share-button">
                         <use xlink:href="/imgs/svg.svg#svg-twitter" x="0" y="0" width="100%" height="100%"></use>
                     </svg>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" title="Share on Facebook">
                     <svg id="post-share-facebook" class="post-share-button">
                         <use xlink:href="/imgs/svg.svg#svg-facebook" x="0" y="0" width="100%" height="100%"></use>
                     </svg>
                 </a>
-                <a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}">
+                <a target="_blank" href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" title="Share on Google">
                     <svg id="post-share-google" class="post-share-button">
                         <use xlink:href="/imgs/svg.svg#svg-google" x="0" y="0" width="100%" height="100%"></use>
                     </svg>
@@ -84,11 +84,15 @@ layout: default
 
     <footer id="footer">
 
+        <h2 class="page-sub-header">Author</h2>
+
         <div id="author">
 
             {% include member.html member=member %}
 
         </div>
+
+        <h2 class="page-sub-header">Comments</h2>
 
         <div id="disqus_thread"></div>
 

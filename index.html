@@ -34,12 +34,12 @@ elementID: posts
                 <div class="posts-post-title">
 
                     <h4 class="posts-post-title-text">
-                        <a href="{{ post.url }}">
+                        <a class="posts-post-title-text-link" href="{{ post.url }}" title="{{ post.title }}">
                             {{ post.title }}
                         </a>
 
                         {% for tag in post.tags %}
-                            <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}">#{{ tag }}</a>
+                            <a class="post-tag" href="{{ tag | first | prepend: '/tags/' | prepend: site.baseurl }}" title="{{ tag }}">#{{ tag }}</a>
                         {% endfor %}
 
                     </h4>
@@ -49,20 +49,20 @@ elementID: posts
                 <div class="posts-post-metadata">
 
                     <span class="posts-post-authoring-info">
-                        <a href="/tags#{{ member.github }}" class="posts-post-author-name">{{ member.name }}</a>
+                        <a href="/tags#{{ member.github }}" class="posts-post-author-name" title="{{ member.name }}">{{ member.name }}</a>
                         •
                         <span class="posts-post-date">{{ post.date | date_to_string }}</span>
                     </span>
 
                 </div>
 
-                <a class="posts-post-link" href="{{ post.url }}"></a>
+                <a class="posts-post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
 
             </div>
 
             <div class="posts-post-author-avatar">
-                <a href="/members#{{ member.github }}">
-                    <img class="posts-post-author-img" src="{{ member.author-img }}"/>
+                <a href="/members#{{ member.github }}" title="{{ member.github }}">
+                    <img class="posts-post-author-img" src="{{ member.author-img }}" alt="{{ member.github }} Avatar Image" title="{{ member.github }}"/>
                 </a>
             </div>
 
@@ -79,7 +79,7 @@ elementID: posts
     <div class="pagination cf">
 
         {% if paginator.previous_page %}
-            <div class="page-number"><a class="carrot" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><</a></div>
+            <div class="page-number"><a class="carrot" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page"><</a></div>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
@@ -89,11 +89,11 @@ elementID: posts
 
             {% if page <= plusTwo and page >= minusTwo %}
                 {% if page == paginator.page %}
-                    <div class="page-number"><a href="#" class="selected">{{ page }}</a></div>
+                    <div class="page-number"><a href="#" class="selected" title="Page {{ page }}">{{ page }}</a></div>
                 {% elsif page == 1 %}
-                    <div class="page-number"><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></div>
+                    <div class="page-number"><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" title="Page {{ page }}">{{ page }}</a></div>
                 {% else %}
-                    <div class="page-number"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></div>
+                    <div class="page-number"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" title="Page {{ page }}">{{ page }}</a></div>
                 {% endif %}
 
             {% endif %}
@@ -101,7 +101,7 @@ elementID: posts
         {% endfor %}
 
         {% if paginator.next_page %}
-            <div class="page-number"><a class="carrot" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">></a></div>
+            <div class="page-number"><a class="carrot" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">></a></div>
         {% endif %}
 
     </div>

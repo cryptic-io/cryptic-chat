@@ -1,29 +1,10 @@
 ;(function(){
-  var postsJSON = [];
-  var searchURL = 'http://' + window.location.host + '/search/search-data.json';
+  var postsJSON = window.postsJSON;
 
-  // create anelement to show when there are no results
-  var emptyElem = document.createElement('li');
+  // create an element to show when there are no results
+  var emptyElem = document.createElement('div');
   emptyElem.className = 'empty-results';
   emptyElem.innerHTML = 'No results to display';
-
-  // fetch a given url. returns a promise
-  var getJSON = function(url) {
-    return new Promise(function(resolve, reject) {
-      var xhr = new XMLHttpRequest();
-      xhr.open('get', url, true);
-      xhr.responseType = 'json';
-      xhr.onload = function() {
-        var status = xhr.status;
-        if (status == 200) {
-          resolve(xhr.response);
-        } else {
-          reject(status);
-        }
-      };
-      xhr.send();
-    });
-  };
 
   // references to input and results elements
   var input = document.getElementById('search-input');
@@ -69,11 +50,8 @@
         a.appendChild(linkText);
         a.title = post.title;
         a.href = post.href;
-        // create a list element and add the anchor element as a child
-        var resultElem = document.createElement('li');
-        resultElem.appendChild(a);
-        // append list element to list of results
-        resultsContainer.appendChild(resultElem);
+        // append anchor element to list of results
+        resultsContainer.appendChild(a);
       });
     }
   };
@@ -85,16 +63,7 @@
     // click a link, then press the back button. or if it took a while for the results json to load
     // and you already started typing into the search input)  
     searchPosts();
-  }
-  
-  // immediately fetch all posts from the server
-  getJSON( searchURL ).then(function(data) {
-    // save the results
-    postsJSON = data;
-    // kick it all off
-    init();
-  }, function(status) {
-    console.log('Error fetching search data');
-  });
+  };
 
+  init();
 })();

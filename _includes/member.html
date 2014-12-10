@@ -37,31 +37,31 @@
         <div class="member-author-socials">
 
             {% if include.member.website %}
-            <a href="{{ include.member.website }}" class="member-author-social">
+            <a href="{{ include.member.website }}" class="member-author-social" title="Website of {{ include.member.name }}">
                 Website
             </a>
             {% endif %}
 
             {% if include.member.email %}
-            <a href="mailto:{{ include.member.email }}" class="member-author-social">
+            <a href="mailto:{{ include.member.email }}" class="member-author-social" title="Email of {{ include.member.name }}">
                 Email
             </a>
             {% endif %}
 
             {% if include.member.github %}
-            <a href="http://github.com/{{ include.member.github }}" class="member-author-social">
+            <a href="http://github.com/{{ include.member.github }}" class="member-author-social" title="Github of {{ include.member.name }}">
                 Github
             </a>
             {% endif %}
 
             {% if include.member.twitter %}
-            <a href="{{ include.member.twitter }}" class="member-author-social">
+            <a href="{{ include.member.twitter }}" class="member-author-social" title="Twitter of {{ include.member.name }}">
                 Twitter
             </a>
             {% endif %}
 
             {% if page.google-plus %}
-            <a href="{{ include.member.google-plus }}" class="member-author-social">
+            <a href="{{ include.member.google-plus }}" class="member-author-social" title="Google+ of {{ include.member.name }}">
                 Google+
             </a>
             {% endif %}
@@ -84,7 +84,7 @@
 
             <li class="member-related-post cf">
                 <i class="fa fa-angle-right"></i>
-                <a href="{{ post.url }}">
+                <a href="{{ post.url }}" title="{{ post.title }}">
                     <span>{{ post.title }}</span>
                 </a>
             </li>
@@ -93,7 +93,7 @@
 
         </ul>
 
-        <a class="member-related-posts-all-link" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}">See all posts by {{ member.github }}</a>
+        <a class="member-related-posts-all-link" href="{{ include.member.github | prepend: '/tags#' | prepend: site.baseurl }}" title="See all posts by {{ member.github }}">See all posts by {{ member.github }}</a>
 
     </div>
 

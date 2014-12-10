@@ -20,9 +20,6 @@
 
 .bottom-section h2 {
     margin: 0;
-    padding: 0 0 11px 11px;
-    font-size: 16px;
-    border-bottom: 1px solid {{ page.grayDarkHover }};
 }
 
 .bottom-section ul {
@@ -114,6 +111,15 @@
     {{ page.boxShadow }}
 }
 
+.recent-post-words:hover {
+    background: {{ page.paleGreen }};
+}
+
+.recent-post-words:hover + .recent-post-author-avatar:before {
+    border-right-color: {{ page.paleGreen }};
+    border-top-color: {{ page.paleGreen }};
+}
+
 .recent-post-title {
     margin-bottom: 8px;
 }
@@ -134,6 +140,10 @@
 
 .recent-post-title-text a:hover, .recent-post-author-name:hover {
     text-decoration: underline;
+}
+
+.recent-post-title-text-link {
+    padding-right: 5px;
 }
 
 .recent-post-authoring-info {
@@ -168,4 +178,15 @@
 
 #copyright-band a {
     color: {{ page.darkGray }};;
+}
+
+@media only screen and (max-width: 785px) {
+    .bottom-section {
+        max-width: none;
+    }
+
+    .recent-post-words {
+        display: inline-block;
+        max-width: 420px;
+    }
 }
