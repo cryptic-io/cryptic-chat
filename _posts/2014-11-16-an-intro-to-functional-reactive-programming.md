@@ -47,6 +47,7 @@ we would map against a function that tells us the guest's bill.
 
 This is just a normal array with normal map/reduce construct.
 For completeness here's the equivalent code.
+
 ```javascript
 var guests = ["amy", "sally", "bob"]
 var bills = {"amy":22.50, "sally":67.00, "bob":6.00}
@@ -70,6 +71,7 @@ from map/reduce themselves become streams that never end.
 
 Here is some equivalent pseudo code for streams that calculates
 the `guestCounts` and the `guestBills`.
+
 ```javascript
 guests      = [... time passes ..., Frank, ... time passes ..., Jack, ... ]
 
@@ -128,6 +130,7 @@ We've talked about streams for a while now, let's implement them.
 In the following code, we create a function that will return an object with two
 methods: `observe` for registering event listeners and `update` for adding a value
 to the stream.
+
 ```javascript
 // A function to make streams for us
 var streamMaker = function(){
@@ -154,6 +157,7 @@ var streamMaker = function(){
 
 We also want to make a helper function that will create a new reduced stream
 given an existing `stream`, a `reducingFunction`, and an `initialReducedValue`:
+
 ```javascript
 // A function to make a new stream from an existing stream
 // a reducing function, and an initial reduced value
@@ -171,6 +175,7 @@ var reducedStream = function(stream, reducingFunction, initialReducedValue){
 
 
 Now to implement the keypress stream and count stream.
+
 ```javascript
 // Our reducer from before
 var keyCountReducer = function(reducedValue, streamSnapshot){
@@ -292,11 +297,13 @@ A single app state means that there is only one object that encapsulates the
 state of your application.
 
 Benefits:
+
 * All changes to the frontend happen from this app state.
 * You can snapshot this state and be able to recreate the
 frontend at any point in time (facilitates undo/redo).
 
 Downsides:
+
 * You may conflate things that shouldn't be together.
 
 Having a single place that reflects the whole state is pretty amazing,
@@ -325,6 +332,7 @@ then form a single app state from that stream.
 First let's make a helper function that will merge streams for us. To keep it
 general and simple we'll take only two streams and a merging function.
 It will return a new stream which is the merge of both streams with the mergeFn.
+
 ```javascript
 // A merge streams helper function
 var mergeStreams = function(streamA, streamB, mergeFn){
@@ -353,6 +361,7 @@ can return duplicate values of one of the streams.
 
 We want to put both the keypress and the counter in one object, so our
 merge function will do just that.
+
 ```javascript
 var mergeIntoObject = function(keypress, counter){
   return {"counter" : counter,
@@ -361,6 +370,7 @@ var mergeIntoObject = function(keypress, counter){
 ```
 
 Now to create the single app state stream, and render that single app state.
+
 ```javascript
 var appStateStream = mergeStreams(keypressStream, countStream, mergeIntoObject);
 
@@ -372,6 +382,7 @@ appStateStream.observe(function(value){
 ## Final Code
 Most of these functions are library functions that you wouldn't need to implement
 yourself. The final application specific code would look like:
+
 ```javascript
 // Create the keypress stream
 var keypressStream = streamMaker();
