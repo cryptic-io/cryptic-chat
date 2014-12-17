@@ -8,7 +8,7 @@ description: >
   personal goals we collaborating often and want others to share in this 
   experience.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://cryptic-io" # the base hostname & protocol for your site
+url: "https://cryptic-io" # the base hostname & protocol for your site
 permalink: :title/
 paginate: 13
 
