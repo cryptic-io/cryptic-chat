@@ -4,6 +4,7 @@ title: Random Terrain Generation, A Clojure Walkthrough
 tags: clojure terrain
 username: mediocregopher
 source: "https://github.com/mediocregopher/diamond-square"
+crosspost: http://blog.mediocregopher.com/clojure-diamond-square.html
 ---
 
 ![terrain][terrain]

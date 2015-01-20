@@ -155,6 +155,24 @@
     background: {{ page.blue }};
 }
 
+.post-crosspost-container {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 11px 15px;
+  font-size: 80%;
+}
+
+.post-crosspost-container a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post-crosspost-container a:hover {
+  text-decoration: underline;
+}
+
 
 /*  General  */
 

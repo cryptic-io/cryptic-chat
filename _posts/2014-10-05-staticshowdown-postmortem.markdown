@@ -4,6 +4,7 @@ title: Sock Singles, a post mortem on our static showdown entry
 tags: clojurescript javascript react firebase
 username: marcopolo
 demo: "https://sock-singles.firebaseapp.com/"
+crosspost: http://marcopolo.io/2014/02/11/staticshowdown-postmortem.html
 ---
 
 # Static Showdown

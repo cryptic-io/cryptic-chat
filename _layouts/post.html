@@ -53,6 +53,12 @@ layout: default
 
         </div>
 
+        {% if page.crosspost %}
+          <div class="post-crosspost-container">
+            This was cross-posted on <a href="{{ page.crosspost }}">{{page.crosspost}}</a>
+          </div>
+        {% endif %}
+
         <article id="post-content">
 
             {{ content }}

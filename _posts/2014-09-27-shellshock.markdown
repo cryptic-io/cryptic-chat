@@ -3,6 +3,7 @@ layout: post
 title: Shellshock DIY
 tags: aws apache bash
 username: akenn
+crosspost: https://akenn.org/blog/shellshock/
 ---
 
 When [news of Shellshock first broke](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271), the main vector of attack was any application running on an Apache server via CGI. I don't run any Apache servers anymore, and if I did I probably wouldn't be running them with CGI (just not my preference). However, I wanted to try this bug out and I didn't want to do so in a malicious manner; I simply wanted to see what it did.
