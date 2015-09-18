@@ -77,6 +77,11 @@
     margin: 0;
 }
 
+#post-title-text {
+    font-size: 31px;
+    line-height: 37px;
+}
+
 #post-metadata {
     display: block;
     margin: 0;
@@ -102,8 +107,7 @@
 
 #post-tags {
     text-align: left;
-    margin: 13px 0 15px 0;
-    padding: 0 0 0 77px;
+    margin: 11px 0 11px 0;
 }
 
 

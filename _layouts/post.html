@@ -20,11 +20,16 @@ layout: default
             <div id="post-header-words">
 
                 <h1 id="post-title">
-                    {{ page.title }}
 
-                    {% for tag in page.tags %}
-                        <a class="post-tag" href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}" title="{{ tag }}">#{{ tag }}</a>
-                    {% endfor %}
+                    <span id="post-title-text">
+                        {{ page.title }}
+                    </span>
+
+                    <div id="post-tags">
+                        {% for tag in page.tags %}
+                            <a class="post-tag" href="{{ tag | prepend: '/tags#' | prepend: site.baseurl }}" title="{{ tag }}">#{{ tag }}</a>
+                        {% endfor %}
+                    </div>
                 </h1>
 
                 <div id="post-metadata">
