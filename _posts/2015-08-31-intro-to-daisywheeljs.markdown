@@ -2,6 +2,8 @@
 layout: post
 title: Adding the DaisywheelJS onscreen-keyboard to HTML5 Gamepad projects
 tags: daisywheeljs daisywheel gamepad html5
+source: https://github.com/likethemammal/daisywheeljs
+demo: http://daisywheeljs.org
 username: likethemammal
 ---
 

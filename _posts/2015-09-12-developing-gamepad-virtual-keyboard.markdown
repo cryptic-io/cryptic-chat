@@ -2,14 +2,15 @@
 layout: post
 title: "Considerations for developing a gamepad virtual keyboard, Part 1: The interface"
 tags: flux daisywheeljs gamepad html5
+source: https://github.com/likethemammal/daisywheeljs
 username: likethemammal
 ---
 
 When working with gamepad controllers, it's general practice to present users with a virtual keyboard to enter text information. Keyboard layouts like [DaisywheelJS’s](http://daisywheeljs.org) and [others](http://www.inference.phy.cam.ac.uk/dasher/images/newdasher.gif) are great alternatives to the traditional QWERTY keyboard presented by console developers. But whether you’re working with an unique layout or not, there are several considerations that go into creating a virtual keyboard. This article discusses those topics. This first part will cover the visual aspects (the input element, keyboard, controls, etc.), and the next part will cover connecting everything to a gamepad (in this case, the HTML5 Gamepad API).
 
-*Note: When I wrote DaisywheelJS I used React and Flux for the keyboard’s logic and view layer. Because of this, I’ll be loosely sprinkling bits of Flux-specific implementation and some ignorable code examples. Most of the article will be a discussion of technology-agnostic considerations, so don’t worry if you don’t use Flux.*
+*Note: When I wrote DaisywheelJS I used [React](https://facebook.github.io/react/) and [Flux](https://facebook.github.io/flux/) for the keyboard’s logic and view layer. Because of this, I’ll be loosely sprinkling bits of Flux-specific implementation and some ignorable code examples. Most of the article will be a discussion of technology-agnostic considerations, so don’t worry if you don’t use Flux.*
 
-![Zelda's virtual keyboard](http://i27.fastpic.ru/big/2011/1003/a2/1e6d3aa24b1f36fc471a764dae939da2.jpg)
+![Zelda: Ocarina of Time's virtual keyboard](/imgs/article/zelda.jpg)
 
 To start off, here are the common pieces of a virtual keyboard interface:
 
@@ -26,7 +27,7 @@ This is the part I’ll talk about the least, because implementation varies grea
 
 ### The inputs
 
-When working with a virtual keyboard, the user has to know what text they’ve currently typed and where their cursor is located in that string of text. For this we’re going to use an HTML input tag. In most cases of a virtual keyboard, there is the input field that is actually part of the form or page, and another input that floats above the virtual keyboard. This second input is used to temporarily show the current text being entered. I’ll be calling the real input *Real Input* and this temporary one *Fake Input*. OnFocus of the Real Input, the keyboard and the Fake Input will be presented. There’s also some other baseline functionality that should be expected from this Fake Input.
+When working with a virtual keyboard, the user has to know what text they’ve currently typed and where their cursor is located in that string of text. For this we’re going to use an HTML input tag. In most cases of a virtual keyboard, there is the input field that is actually part of the form or page, and another input that floats above the virtual keyboard. This second input is used to temporarily show the current text being entered. I’ll be calling the real input *Real Input* and this temporary one *Fake Input*. `onFocus` of the Real Input, the keyboard and the Fake Input will be presented. There’s also some other baseline functionality that should be expected from this Fake Input.
 
  + Shows the cursor's location.
  + Shows current text, this includes text that was already in the Real Input onFocus.
@@ -36,15 +37,15 @@ When working with a virtual keyboard, the user has to know what text they’ve c
 
 That first one is easy. The HTML input tag automatically shows the current location of the cursor.
 
-<p style=”text-align: center;”>
-<input placeholder=”this is an input”>
+<p style="text-align: center;">
+	<input placeholder="this is an input">
 <p>
 
 The 2nd one is almost as straight-forward. We’ll have to keep track of that current text string value. If you’re using Flux, you’ll probably want to create a Store for the value of the input tag at this point. That way our Fake Input and the Real Input will both mirror the same values when the virtual keyboard is dismissed.
 
 The functionality for those last 3 points all fold into each other, so we’ll discuss them all at once.
 
-Let’s assume you already have a mechanism for getting the currently selected symbol. We'll need a callback for that event, let's call it onGamepadEvent. Inside this callback we receive the new character being typed out. We can't just concatenate it onto the end of our current string because the cursor could be anywhere. So we need to get the current string value from the input, get the cursor location within that string, and then insert the new character at that location of the cursor. We also need to increment the location of the cursor, as I'll discuss next.
+Let’s assume you already have a mechanism for getting the currently selected symbol. We'll need a callback for that event, let's call it `onGamepadEvent`. Inside this callback we receive the new character being typed out. We can't just concatenate it onto the end of our current string because the cursor could be anywhere. So we need to get the current string value from the input, get the cursor location within that string, and then insert the new character at that location of the cursor. We also need to increment the location of the cursor, as I'll discuss next.
 
 ```js
 // stores/input.js
@@ -69,7 +70,7 @@ onGamepadEvent: function(symbol) {
 
 ```
 
-Since the location of the cursor can be changed by the mouse, keyboard, and the gamepad it's impractical to listen for keyboard events and mouse clicks to track the cursor, and in turn, know where to add new characters. Instead, let's use the onChange event for the Fake input and update a value that we store to keep track of the cursor. The DOM provides a decent API to work with text selection and the cursor, called the [Selection API](https://developer.mozilla.org/en-US/docs/Web/API/Selection). You'll need polyfills to get support for IE. Here are the ones for [getCursor](http://stackoverflow.com/a/263796/2687479) and [setCursor](http://stackoverflow.com/questions/1865563/set-cursor-at-a-length-of-14-onfocus-of-a-textbox/1867393#1867393)
+Since the location of the cursor can be changed by the mouse, keyboard, and the gamepad it's impractical to listen for keyboard events and mouse clicks to track the cursor, and in turn, know where to add new characters. Instead, let's use the `onChange` event for the Fake input and update a value that we store to keep track of the cursor. The DOM provides a decent API to work with text selection and the cursor, called the [Selection API](https://developer.mozilla.org/en-US/docs/Web/API/Selection). You'll need polyfills to get support for IE. Here are the ones for [getCursor](http://stackoverflow.com/a/263796/2687479) and [setCursor](http://stackoverflow.com/questions/1865563/set-cursor-at-a-length-of-14-onfocus-of-a-textbox/1867393#1867393)
 
 ```js
 // jsx/InputView.js
@@ -101,7 +102,7 @@ Good job, that was the hardest part of this interface. It's all easy going from 
 
 The container for the entire keyboard, the Fake Input, and the controls I will refer to as the "Viewport". The biggest considerations here are keeping the Viewport scaled to the user's window, and keeping it focused (and visible) when they try to type.
 
-That latter part is easy. Create handlers for the Real Input's `onFocus` and `onBlur` events. OnFocus we'll show the entire Viewport and get the Real Input's latest string value. onBlur we'll hide the Viewport, and update the Real Input with the string we've been typing using the Fake Input.
+That latter part is easy. Create handlers for the Real Input's `onFocus` and `onBlur` events. onFocus we'll show the entire Viewport and get the Real Input's latest string value. onBlur we'll hide the Viewport, and update the Real Input with the string we've been typing using the Fake Input.
 
 CSS classes or selective JS rendering can handle the Viewport visibility, and Flux can help us out here by tracking whether the viewport should be visible. As I mentioned earlier, a Flux store is also a good place to keep the "current" text value. Updating it when a new value is inherited from the Real Input.
 
