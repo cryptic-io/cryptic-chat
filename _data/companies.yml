@@ -12,3 +12,6 @@
 
 - name: Google
   site: "https://www.google.com/intl/en/about/"
+
+- name: Admiral
+  site: "http://getadmiral.com"
