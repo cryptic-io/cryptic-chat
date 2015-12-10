@@ -45,7 +45,7 @@ E1 + E1 + 19 + 19 + 0 + 0
 0001F4
 ```
 
-So `FF5500` (and orangish color) happifies to `0001F4` (A darker blue). Since
+So `FF5500` (an orangish color) happifies to `0001F4` (a darker blue). Since
 order of digits doesn't matter, `5F50F0` also happifies to `0001F4`. From this
 fact, we can make a tree (hence the happification tree). I can do this process
 on every color from `000000` (black) to `FFFFFF` (white), so I will!
