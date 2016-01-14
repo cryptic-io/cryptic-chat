@@ -1,0 +1,60 @@
+==================================================================
+https://keybase.io/marcopolo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cryptic.io
+  * I am marcopolo (https://keybase.io/marcopolo) on keybase.
+  * I have a public key ASDacFqtIDgkpcvIcjeLCkCLqB3YMKIg-w4MWflM0F5eLwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b65b8ac0f540fcf770fe3c2e403af7eba635d1a3cb6df7f1506580f3c9f037870a",
+            "host": "keybase.io",
+            "kid": "0120da705aad203824a5cbc872378b0a408ba81dd830a220fb0e0c59f94cd05e5e2f0a",
+            "uid": "4c230ae8d2f922dc2ccc1d2f94890700",
+            "username": "marcopolo"
+        },
+        "service": {
+            "hostname": "cryptic.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.8"
+    },
+    "ctime": 1452730418,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1452730038,
+        "hash": "0380402ede6a9efeffea4c0c28c3f178ef16257bd5b748e8f1d41195bff04beedf16fc9bd81ed4eaeccfad2b0511419816d640430da69e58b605968cad3de006",
+        "seqno": 348565
+    },
+    "prev": "6069ee0210112d4f69cc94cbca70fea85c3cbcc786bc30d3a55ef9480a048d60",
+    "seqno": 30,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2nBarSA4JKXLyHI3iwpAi6gd2DCiIPsODFn5TNBeXi8Kp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYjY1YjhhYzBmNTQwZmNmNzcwZmUzYz
+JlNDAzYWY3ZWJhNjM1ZDFhM2NiNmRmN2YxNTA2NTgwZjNjOWYwMzc4NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZGE3MDVhYWQyMDM4MjRhNWNiYzg3MjM3OGIwYTQwOGJhODFkZDgzMGEyMjBmYjBlMGM1OWY5NGNkMDVl
+NWUyZjBhIiwidWlkIjoiNGMyMzBhZThkMmY5MjJkYzJjY2MxZDJmOTQ4OTA3MDAiLCJ1c2VybmFtZSI6Im1hcmNvcG9sbyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY3J5cHRpYy5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOi
+J3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjgifSwiY3RpbWUiOjE0NTI3MzA0MTgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJt
+ZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ1MjczMDAzOCwiaGFzaCI6IjAzODA0MDJlZGU2YTllZmVmZmVhNGMwYzI4YzNmMTc4ZWYxNjI1N2JkNWI3NDhlOGYxZDQxMTk1YmZmMDRiZWVkZjE2ZmM5YmQ4MWVkNGVhZWNjZmFkMmIwNTExNDE5OD
+E2ZDY0MDQzMGRhNjllNThiNjA1OTY4Y2FkM2RlMDA2Iiwic2Vxbm8iOjM0ODU2NX0sInByZXYiOiI2MDY5ZWUwMjEwMTEyZDRmNjljYzk0Y2JjYTcwZmVhODVjM2NiY2M3ODZiYzMwZDNhNTVlZjk0ODBhMDQ4ZDYwIiwic2Vxbm8iOjMwLCJ0
+YWciOiJzaWduYXR1cmUifaNzaWfEQGH/jPDBA0pzmyiF2yI5SIG6Y1QlQ4s5Ng6AgSfPl5LOa6DNffP9eK2C6Vr3CI6Agp/KNxC4gzhlWMIuZCyc/QOoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marcopolo
+
+==================================================================
