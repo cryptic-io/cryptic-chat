@@ -34,7 +34,7 @@ sudo a2enmod cgi
 
 That was easy. We need to tell Apache when to use CGI. We'll do that by adding the following somewhere in the config of a site in our enabled virtual hosts folder (`/etc/apache2/sites-enabled`; in our case the exact file is `/etc/apache2/sites-enabled/000-default.conf`):
 
-{% highlight apache %}
+{% highlight conf %}
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory "/usr/lib/cgi-bin">
   AllowOverride None
@@ -46,7 +46,7 @@ ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 
 The complete Apache configuration file for the virtual host we'll be using looks like this:
 
-{% highlight apache %}
+{% highlight conf %}
 <VirtualHost *:80>
   ServerAdmin webmaster@localhost
   DocumentRoot /var/www/html
