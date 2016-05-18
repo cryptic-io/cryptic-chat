@@ -11,9 +11,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://cryptic.io" # the base hostname & protocol for your site
 permalink: :title/
 paginate: 13
-
+gems: [jekyll-paginate]
 author: "Chris Dolphin"
 keywords: 'developers, dev blog, tech industry, programming, development'
-
-# Build settings
-markdown: redcarpet
